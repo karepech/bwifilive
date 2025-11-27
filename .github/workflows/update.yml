@@ -1,4 +1,4 @@
-name: Generate M3U Playlist
+name: Update M3U
 
 on:
   schedule:
@@ -10,26 +10,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repo
-      uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: Setup NodeJS
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
 
-    - name: Install Dependencies
-      run: npm install
+      - run: npm install
 
-    - name: Run M3U Generator
-      run: node generate_m3u.js
+      - name: Generate M3U
+        run: node generate-live.js
 
-    - name: Commit Updated File
-      run: |
-        git config user.name "GitHub Actions"
-        git config user.email "actions@github.com"
-        git add live.m3u
-        git commit -m "Update M3U playlist"
-        git push
-      continue-on-error: true
-
+      - name: Commit changes
+        run: |
+          git config user.name "GitHub Bot"
+          git config user.email "bot@github"
+          git add live.m3u
+          git commit -m "Auto update live m3u" || echo "No changes"
+          git push
