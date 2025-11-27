@@ -1,5 +1,151 @@
 #EXTM3U
-#EXTINF:-1 group-title="SPORT",Live Bola 1
-https://bakulwifi.my.id/live.m3u
-#EXTINF:-1 group-title="SPORT",Live Bola 2
-https://bakulwifi.my.id/bw.m3u
+#EXTINF:-1 group-title="SPORT",SpoTV
+https://d3b0v7fggu5zwm.cloudfront.net/out/v1/b4814ae93ca84dd3bb5b0aff76ca263f/index.mpd
+#EXTINF:-1 group-title="SPORT",SpoTV 2
+https://d2tjypxxy769fn.cloudfront.net/out/v1/46d9cf39b9a84183b8d5022ac8f4bc41/index.mpd
+#EXTINF:-1 group-title="SPORT",Sukan TV
+https://d25tgymtnqzu8s.cloudfront.net/smil:sukan/manifest.mpd
+#EXTINF:-1 group-title="SPORT",OKEY TV
+https://d25tgymtnqzu8s.cloudfront.net/smil:okey/manifest.mpd
+#EXTINF:-1 group-title="SPORT",Peacock Premier League
+https://fsly.stream.peacocktv.com/Content/CMAF_CTR-4s/Live/channel(vc1021n07j)/master.mpd
+#EXTINF:-1 group-title="SPORT",DAZN RINGSIDE
+https://aegis-cloudfront-1.tubi.video/bfad29e2-5bee-44f3-8256-127324e8b106/playlist.m3u8
+#EXTINF:-1 group-title="SPORT",ASTRO ARENA 2 ᴴᴰ
+https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/Astar2.m3u8
+#EXTINF:-1 group-title="SPORT",ASTRO SPORTS PLUS ᴴᴰ
+https://raw.githubusercontent.com/Cutsiffa/pl/refs/heads/main/Astpl4.m3u8
+#EXTINF:-1 group-title="SPORT",ASTRO FOOTBALL ᴴᴰ
+https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/AstFut.m3u8
+#EXTINF:-1 group-title="SPORT",ASTRO GRANDSTAND ᴴᴰ
+https://a1xs.vip/1100032
+#EXTINF:-1 group-title="SPORT",SONY TEN 1 ᴴᴰ
+https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/Son1.m3u8
+#EXTINF:-1 group-title="SPORT",SONY TEN 2 ᴴᴰ
+https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/Son2.m3u8
+#EXTINF:-1 group-title="SPORT",BEIN SPORTS 4
+http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142758
+#EXTINF:-1 group-title="SPORT",BEIN SPORTS 5
+http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142759
+#EXTINF:-1 group-title="SPORT",BEIN SPORTS 6
+http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
+#EXTINF:-1 group-title="SPORT",BEIN SPORTS 7
+http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142761
+#EXTINF:-1 group-title="SPORT",BEIN SPORTS 8
+http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142752
+#EXTINF:-1 group-title="SPORT",BEIN SPORTS EXTRA
+https://amg01334-beinsportsllc-beinxtra-localnow-kcy6r.amagi.tv/playlist.m3u8
+#EXTINF:-1 group-title="SPORT",DAZN 1-DT1
+http://213.176.3.65:8080/live/COOPERath/w3EBgdaXF0/111261.ts
+#EXTINF:-1 group-title="SPORT",DAZN 3
+http://1tv41.icu:8080/live/43761449506/smallwood/167748.ts
+#EXTINF:-1 group-title="SPORT",DAZN 4
+http://supersonictv.live:8080/006779/439866/7632
+#EXTINF:-1 group-title="SPORT",DAZN 5
+http://supersonictv.live:8080/006779/439866/7634
+#EXTINF:-1 group-title="SPORT",DAZN F1
+http://medotv.nl:8000/RAMBOfoundedoninternetsoIchangedTheFuckinguSERNAMelol123/5caU9cN5jFjZ/115840
+#EXTINF:-1 group-title="SPORT",PRIMA SPORT 1
+https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/prim1.m3u8
+#EXTINF:-1 group-title="SPORT",TENNIS CHANNEL 1
+https://tennischannel-int-samsunguk.amagi.tv/playlist.m3u8
+#EXTINF:-1 group-title="SPORT",TENNIS CHANNEL 2
+http://49.0.64.96:8007/TENNIS
+#EXTINF:-1 group-title="SPORT",SPORTV 3
+https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash/enc/6otiglnptp/out/v1/add7499679b0422cb6791f7701f95ecc/cenc.mpd?amznDtid=AOAGZA014O5RE&encoding=segmentBase
+#EXTINF:-1 group-title="SPORT",HUB SPORTS 1
+https://github.com/udzaa2238/tvtb-me/raw/refs/heads/main/hub-sport-1-1.m3u8?raw=true
+#EXTINF:-1 group-title="SPORT",HUB SPORTS 2
+https://github.com/udzaa2238/tvtb-me/raw/refs/heads/main/hub-sport-2-1.m3u8?raw=true
+#EXTINF:-1 group-title="SPORT",HUB SPORTS 3
+https://github.com/udzaa2238/tvtb-me/raw/refs/heads/main/hub-sport-3-1.m3u8?raw=true
+#EXTINF:-1 group-title="SPORT",STAR SPORTS SELECT 1 ᴴᴰ
+http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/33356
+#EXTINF:-1 group-title="SPORT",ESPN VIVO
+http://sinalprivado.info:80/live/632035/GqGcFV4ntu/22002.ts
+#EXTINF:-1 group-title="SPORT",ESPN 3
+http://46.151.196.223:14444/
+#EXTINF:-1 group-title="SPORT",ESPN
+http://medotv.nl:8000/RAMBOfoundedoninternetsoIchangedTheFuckinguSERNAMelol123/5caU9cN5jFjZ/14920
+#EXTINF:-1 group-title="SPORT",ESPN 2
+http://supersonictv.live:8080/006779/439866/22199
+#EXTINF:-1 group-title="SPORT",ESPN NETWORK
+http://supersonictv.live:8080/006779/439866/22208
+#EXTINF:-1 group-title="SPORT",ESPN U
+https://fl31.moveonjoy.com/ESPN_U/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="SPORT",Abu Dhabi Sports TV 2
+https://vo-live-media.cdb.cdn.orange.com/Content/Channel/AbuDhabiSportsChannel2/HLS/index.m3u8
+#EXTINF:-1 group-title="SPORT",Bahrain Sports 1
+https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8
+#EXTINF:-1 group-title="SPORT",Bahrain Sports 2
+https://5c7b683162943.streamlock.net/live/ngrp:bahrainsportstwo_all/playlist.m3u8
+#EXTINF:-1 group-title="SPORT",DUBAI SPORTS 1
+https://dmidspta.cdn.mgmlcdn.com/dubaisports/smil:dubaisports.stream.smil/master.m3u8
+#EXTINF:-1 group-title="SPORT",DUBAI SPORTS 2
+https://dmitwlvvll.cdn.mgmlcdn.com/dubaisportshd/smil:dubaisportshd.smil/master.m3u8
+#EXTINF:-1 group-title="SPORT",DUBAI SPORTS 3
+https://dmitwlvvll.cdn.mgmlcdn.com/dubaisportshd5/smil:dubaisportshd5.smil/master.m3u8
+#EXTINF:-1 group-title="SPORT",GO3 SPORT OPEN
+http://de.online24.pm/play/6711/0E5BF0B5A9755BD/video.m3u8
+#EXTINF:-1 group-title="SPORT",GO3 SPORT 1
+http://de.online24.pm/play/6709/0E5BF0B5A9755BD/video.m3u8
+#EXTINF:-1 group-title="SPORT",GO3 SPORT 2
+http://de.online24.pm/play/6710/0E5BF0B5A9755BD/video.m3u8
+#EXTINF:-1 group-title="SPORT",SUPER SPORT 1
+https://wahyu1ptv.pages.dev/SuperSport1-HD.m3u8
+#EXTINF:-1 group-title="SPORT",SUPER SPORT 2
+https://wahyu1ptv.pages.dev/SuperSport2-HD.m3u8
+#EXTINF:-1 group-title="SPORT",SUPER SPORT 3
+https://wahyu1ptv.pages.dev/SuperSport3-HD.m3u8
+#EXTINF:-1 group-title="SPORT",MUTV ᴴᴰ
+http://tvmate.icu:8080/69NpyV/884735/53717
+#EXTINF:-1 group-title="SPORT",REAL MADRID TV ᴴᴰ
+https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/bitrate_3.m3u8
+#EXTINF:-1 group-title="SPORT",BARCA TV ᴴᴰ
+https://amg17560-fcb-amg17560c1-rakuten-uk-4891.playouts.now.amagi.tv/playlist/amg17560-fcbarcelona-topbarcaenglish-rakutenuk/playlist.m3u8
+#EXTINF:-1 group-title="SPORT",MILAN TV ᴴᴰ
+http://medotv.nl:8000/RAMBOfoundedoninternetsoIchangedTheFuckinguSERNAMelol123/5caU9cN5jFjZ/127757
+#EXTINF:-1 group-title="SPORT",BILLIYARD TV
+https://newidco-billiardstv-1-eu.xiaomi.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="SPORT",WWE ᴴᴰ
+http://line.lemotv.cc:80/Ivica5274/juric4005/2903216
+#EXTINF:-1 group-title="SPORT",IMPACT! WRESTLING
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/59b722526996084038c01e1b/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel
+#EXTINF:-1 group-title="SPORT",BELLATOR MMA
+http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5ebc8688f3697d00072f7cf8/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT={TARGETOPT}&deviceId={PSID}&advertisingId={PSID}&us_privacy=1YNY&samsung_app_domain={APP_DOMAIN}&samsung_app_name={APP_NAME}&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
+#EXTINF:-1 group-title="SPORT",GLORY KICKBOXING
+http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5417a212ff9fba68282fbf5e/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT={TARGETOPT}&deviceId={PSID}&advertisingId={PSID}&us_privacy=1YNY&samsung_app_domain={APP_DOMAIN}&samsung_app_name={APP_NAME}&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
+#EXTINF:-1 group-title="SPORT",BOXING TV
+https://stitcher.pluto.tv/stitch/hls/channel/64df7ab4dfa32400083c517blivestitch/master.m3u8?deviceType=web&servertSideAds=false&deviceMake=safari&deviceVersion=1&deviceId=spencer&appVersion=1&deviceDNT=0&deviceModel=web&sid=f9f2b24b-6a97-11ef-9ed7-d66fb14cb385&profilesFromStream=true
+#EXTINF:-1 group-title="SPORT",FIGHT SPORTS
+https://d2tjypxxy769fn.cloudfront.net/out/v1/73b7057c72da4615888a11b02a6cbb3c/index.mpd
+#EXTINF:-1 group-title="SPORT",XTREM SPORTS
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e0b81a5c-6ab5-48cd-aaa9-f82de4ab5bf9/manifest.m3u8
+#EXTINF:-1 group-title="SPORT",HORSE TV
+https://a-cdn.klowdtv.com/live2/horsetv_720p/playlist.m3u8
+#EXTINF:-1 group-title="SPORT",REDBULL TV
+https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_3360.m3u8
+#EXTINF:-1 group-title="SPORT",FISHING TV
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8
+#EXTINF:-1 group-title="SPORT",JUST FISHING
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/61b33085897b9d000702b72e/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=1b1e2704-4b81-11ef-a8ac-e146e4e7be02&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=40e61b35-9683-4394-86ae-756247e07690
+#EXTINF:-1 group-title="SPORT",PGA TOUR
+http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5de94dacb394a300099fa22a/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT={TARGETOPT}&deviceId={PSID}&advertisingId={PSID}&us_privacy=1YNY&samsung_app_domain={APP_DOMAIN}&samsung_app_name={APP_NAME}&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
+#EXTINF:-1 group-title="SPORT",SHARJAH SPORT
+https://svs.itworkscdn.net/smc4sportslive/smc4.smil/playlist.m3u8?checkedby:hlscat.com
+#EXTINF:-1 group-title="SPORT",OMAN SPORT
+https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8
+#EXTINF:-1 group-title="SPORT",ARENA PREMIUM 2
+http://sltv2.be:8080/DeNiSoNkEl/nPcCsz5hHn/438732
+#EXTINF:-1 group-title="SPORT",FUBO SPORTS 1
+http://23.227.140.75:8880/live/ElizJohn614/fdtXMLpTA9/418199.ts
+#EXTINF:-1 group-title="SPORT",BEIN SPORT XTRA
+https://amg01334-beinsportsllc-beinxtra-localnow-kcy6r.amagi.tv/playlist.m3u8
+#EXTINF:-1 group-title="SPORT",SPORT.TV 1
+https://wahyu1ptv.pages.dev/Sport.TV1-HD.m3u8
+#EXTINF:-1 group-title="SPORT",SPORT.TV 2
+https://wahyu1ptv.pages.dev/Sport.TV2-HD.m3u8
+#EXTINF:-1 group-title="SPORT",EPL 10 DAZN IP
+http://supersonictv.live:8080/Allen123/Allen123/7627
+#EXTINF:-1 group-title="SPORT",SERIE A 1 PLUTO
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5e9f2c05172a0f0007db4786/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=d0170d70-8952-11ef-8353-f70668e6a0ea&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=81c0c5ee-095f-4c79-94e3-b24647048b62&userId=&serverSideAds=true
