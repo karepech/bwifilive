@@ -9,7 +9,7 @@ async function generateM3U() {
     },
     {
       name: "Live Bola 2",
-      url: "https://bakulwifi.my.id/bwifi.m3u",
+      url: "https://bakulwifi.my.id/bw.m3u",
       group: "SPORT"
     }
   ];
