@@ -1,7 +1,8 @@
 {
-  "name": "live-m3u",
-  "version": "1.0.0",
+  "name": "m3u-auto",
   "type": "module",
-  "dependencies": {}
+  "dependencies": {
+    "axios": "^1.6.7",
+    "node-fetch": "^3.3.2"
+  }
 }
-
