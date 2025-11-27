@@ -1,2 +1,5 @@
 #EXTM3U
-# File ini akan diperbarui otomatis oleh GitHub Actions
+#EXTINF:-1 group-title="SPORT",Live Bola 1
+https://bakulwifi.my.id/live.m3u
+#EXTINF:-1 group-title="SPORT",Live Bola 2
+https://bakulwifi.my.id/bw.m3u
