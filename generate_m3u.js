@@ -4,12 +4,12 @@ async function generateM3U() {
   const channels = [
     {
       name: "Live Bola 1",
-      url: "https://example.com/live1.m3u8",
+      url: "https://bakulwifi.my.id/live.m3u",
       group: "SPORT"
     },
     {
       name: "Live Bola 2",
-      url: "https://example.com/live2.m3u8",
+      url: "https://bakulwifi.my.id/bwifi.m3u",
       group: "SPORT"
     }
   ];
