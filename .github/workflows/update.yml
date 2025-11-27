@@ -1,1 +1,35 @@
+name: Generate M3U Playlist
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v3
+
+    - name: Setup NodeJS
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Run M3U Generator
+      run: node generate_m3u.js
+
+    - name: Commit Updated File
+      run: |
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add live.m3u
+        git commit -m "Update M3U playlist"
+        git push
+      continue-on-error: true
 
