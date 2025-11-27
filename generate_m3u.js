@@ -1,4 +1,5 @@
 import fs from "fs";
+import fetch from "node-fetch";
 
 async function generateM3U() {
   const channels = [
@@ -16,12 +17,18 @@ async function generateM3U() {
 
   let output = "#EXTM3U\n";
 
-  channels.forEach(ch => {
+  for (const ch of channels) {
     output += `#EXTINF:-1 group-title="${ch.group}",${ch.name}\n`;
-    output += `${ch.url}\n`;
-  });
 
-  fs.writeFileSync("live.m3u", output);
+    // Ambil isi file M3U dari URL
+    const res = await fetch(ch.url);
+    const text = await res.text();
+
+    // Masukkan isi file .m3u ke output (bukan URL-nya)
+    output += text.trim() + "\n";
+  }
+
+  fs.writeFileSync("live.m3u", output, { flag: "w" });
 }
 
 generateM3U();
