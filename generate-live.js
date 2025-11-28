@@ -4,15 +4,13 @@ import axios from "axios";
 
 /*
   generate-live.js (FINAL FIX: Ensures all channels (live and static) are printed)
-  - Channels with live football matches move to ⚽ LIVE FOOTBALL [Tanggal].
-  - All other channels (non-football, non-live football) fall into 🌟 SPORTS GLOBAL & UMUM.
-  - Global duplicate naming is applied.
+  - FIXES channel loss issue by guaranteeing assignment to the FALLBACK_GROUP.
 */
 
 const SOURCE_M3US = [
   
   "https://bakulwifi.my.id/live.m3u"
-  // JANGAN LUPA TAMBAHKAN URL LIVE UNTUK nyolong.m3u DI SINI JIKA SUDAH ADA
+  // Tambahkan URL live untuk nyolong.m3u di sini jika sudah ada
 ];
 
 // =======================================================
@@ -198,11 +196,14 @@ async function main() {
     
     const staticCategory = getStaticCategory(ch, channelMap);
     
-    if (!staticCategory) continue; 
+    if (!staticCategory) {
+        // Jika tidak match sama sekali, lewati (seperti #EXTM3U di file sumber)
+        continue; 
+    }
     
-    let groupTitle = staticCategory; // Default: Kategori Statis (FOOTBALL, BASKET, dll)
     let finalChannelName = ch.name;
     let isLive = false;
+    let groupTitle = FALLBACK_GROUP; 
     
     // Cek apakah saluran ini adalah saluran Bola
     if (staticCategory === "FOOTBALL") { 
@@ -213,16 +214,18 @@ async function main() {
             groupTitle = eventMatchInfo.dateGroup; // Ganti grup ke tanggal dinamis (H+1)
             isLive = eventMatchInfo.isLive;
         } 
-        // Jika saluran Football tidak live, groupTitle tetap 'FOOTBALL' (Kategori Statis)
+        // Jika saluran Football tidak live, groupTitle tetap FALLBACK_GROUP
     } 
     
+    // Jika saluran Non-Football, groupTitle tetap FALLBACK_GROUP
+
     matchedCount++;
     
     processedChannels.push({
         name: finalChannelName,
         url: ch.url,
-        groupTitle: groupTitle, // Bisa dinamis (Tanggal) atau statis (FOOTBALL, BASKET, dll)
-        originalCategory: staticCategory, // Kategori asli untuk sorting internal
+        groupTitle: groupTitle, 
+        originalCategory: staticCategory, 
         isLive: isLive
     });
   }
@@ -240,10 +243,6 @@ async function main() {
       outputMap.set(`${LIVE_FOOTBALL_PREFIX} ${date}`, []);
   });
   outputMap.set(FALLBACK_GROUP, []); // Grup statis Fallback
-  // Tambahkan semua kategori statis dari channelMap agar saluran non-live tidak hilang
-  for (const category of Object.keys(channelMap)) {
-      outputMap.set(category, []);
-  }
 
   for (const ch of processedChannels) {
       const baseNameKey = ch.name.split(' | ')[0]; 
@@ -273,17 +272,7 @@ async function main() {
       
       let finalGroup = ch.groupTitle;
 
-      // Logic: Jika saluran BOLA tidak live (groupTitle adalah 'FOOTBALL'), 
-      // atau saluran non-bola (BASKET, WWE, dll), pindahkan ke FALLBACK GROUP.
-      if (!finalGroup.startsWith(LIVE_FOOTBALL_PREFIX)) {
-          finalGroup = FALLBACK_GROUP;
-      }
-      
-      // Masukkan ke Map
-      if (!outputMap.has(finalGroup)) {
-          // Safety net, meskipun seharusnya sudah diinisialisasi
-          outputMap.set(finalGroup, []);
-      }
+      // Masukkan ke Map (Semua saluran statis dan non-live bola masuk ke FALLBACK_GROUP)
       outputMap.get(finalGroup).push(ch);
   }
   
@@ -293,22 +282,21 @@ async function main() {
   
   output.push("#EXTM3U");
   
-  // Urutkan grup: LIVE FOOTBALL (Tanggal) di atas, diikuti oleh Fallback.
   const sortedGroups = Array.from(outputMap.keys()).sort((a, b) => {
-      if (a.startsWith(LIVE_FOOTBALL_PREFIX) && b.startsWith(LIVE_FOOTBALL_PREFIX)) return a.localeCompare(b);
+      // Prioritas 1: Grup LIVE FOOTBALL (Tanggal) di atas
+      if (a.startsWith(LIVE_FOOTBALL_PREFIX) && b.startsWith(LIVE_FOOTBALL_PREFIX)) {
+          return a.localeCompare(b);
+      }
       if (a.startsWith(LIVE_FOOTBALL_PREFIX)) return -1; 
       if (b.startsWith(LIVE_FOOTBALL_PREFIX)) return 1;
-      return a.localeCompare(b); // Urutan alfabetis untuk grup statis
+      
+      // Prioritas 2: Grup Statis (Fallback) selalu di bawah
+      return 1;
   });
 
   for (const groupTitle of sortedGroups) {
       const channelsInGroup = outputMap.get(groupTitle);
       
-      // Abaikan grup statis yang kosong (misal: kategori 'BASKET' yang tidak memiliki saluran)
-      if (groupTitle !== FALLBACK_GROUP && groupTitle !== LIVE_FOOTBALL_PREFIX && channelsInGroup.length === 0) {
-          continue;
-      }
-
       if (groupTitle.startsWith(LIVE_FOOTBALL_PREFIX)) {
           // --- Grup Dinamis LIVE FOOTBALL ---
           
