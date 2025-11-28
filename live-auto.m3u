@@ -96,10 +96,14 @@ https://amg01334-beinsportsllc-beinxtra-localnow-kcy6r.amagi.tv/playlist.m3u8
 http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5ebc8688f3697d00072f7cf8/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT={TARGETOPT}&deviceId={PSID}&advertisingId={PSID}&us_privacy=1YNY&samsung_app_domain={APP_DOMAIN}&samsung_app_name={APP_NAME}&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",BILLIYARD TV
 https://newidco-billiardstv-1-eu.xiaomi.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",BILLIYARD TV -1
+https://1621590671.rsc.cdn77.org/HLS/BILLIARDTV_SCTE.m3u8
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",BLOOMBERG
 https://atemecdnbalancer-voe.sysln.id/live/eds/BloombergHD/mediampd/BloombergHD.mpd
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",BOXING TV
 https://stitcher.pluto.tv/stitch/hls/channel/64df7ab4dfa32400083c517blivestitch/master.m3u8?deviceType=web&servertSideAds=false&deviceMake=safari&deviceVersion=1&deviceId=spencer&appVersion=1&deviceDNT=0&deviceModel=web&sid=f9f2b24b-6a97-11ef-9ed7-d66fb14cb385&profilesFromStream=true
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",BOXING TV -1
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/boxing-tv/BOXINGTV_SCTE.m3u8
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",BRI SUPER LEAGUE⁽ˢᵉʳᵛᵉʳ ²⁾
 https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/BRISuper2.m3u8
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",CARTOONITO
@@ -138,14 +142,26 @@ http://1tv41.icu:8080/live/43761449506/smallwood/167748.ts
 http://supersonictv.live:8080/006779/439866/7632
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",DAZN 5
 http://supersonictv.live:8080/006779/439866/7634
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",DAZN 6 IP
+http://opplex.tv:8080/live/12345678910/12345678910/233084.ts
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",DAZN F1
 http://medotv.nl:8000/RAMBOfoundedoninternetsoIchangedTheFuckinguSERNAMelol123/5caU9cN5jFjZ/115840
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",DAZN F1 IP
+http://opplex.tv:8080/live/12345678910/12345678910/354195.ts
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",DAZN HD
+https://storage.googleapis.com/gubnsterdsa3/mux_video_ts1/index-1.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",DAZN HELDINNEN
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64afe50c5dc16600087f3227/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=84acf2d7-4b92-11ef-aece-533610f1ea34&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=0334507c-ce21-4017-8651-7c2bf9912782
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",DAZN LALIGA
 http://tv.8dott.xyz:80/live/samuel/samuel123456/837876.ts
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",DAZN RINGSIDE
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/649b6898f2ec0000081a9460/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c287c43-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=a1e2a534-715c-495d-a4f3-2d56a6177548
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",DAZN RINGSIDE -1
 https://aegis-cloudfront-1.tubi.video/bfad29e2-5bee-44f3-8256-127324e8b106/playlist.m3u8
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",DAZN RISE
 http://exm3u.extraott.com:80/live/ZUL96376/UG4VTW4E/82238.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",DAZN WOMEN'S FOOTBALL
+https://dazn-daznwomensfootball-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-dazn-daznwomensfootball-rakuten/CDN/master.m3u8
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",DISCOVERY CHANNEL
 https://atemecdnbalancer-voe.sysln.id/live/eds/DiscoveryHD/mediampd/DiscoveryHD.mpd
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",DISNEY CHANNEL
@@ -158,6 +174,10 @@ https://atemecdnbalancer-voe.sysln.id/live/eds/DreamWorksHD/mediampd/DreamWorksH
 https://dmisdracta.cdn.mgmlcdn.com/events/smil:events.stream.smil/index.m3u8|User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",DUBAI RACING 2
 https://dmithrvllta.cdn.mgmlcdn.com/dubairacing/smil:dubairacing.smil/index.m3u8|User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",EPL 10 DAZN IP
+http://supersonictv.live:8080/Allen123/Allen123/7627
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",EPL 2 SUPER SPORTS
+https://dl.dropboxusercontent.com/scl/fi/51vk0ol0f0zo1falb559o/supersport-premier-league.m3u8?rlkey=m5fxkwayzm3a1vtdc0vc9p913&st=gc1udhg6
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",ESPN
 http://medotv.nl:8000/RAMBOfoundedoninternetsoIchangedTheFuckinguSERNAMelol123/5caU9cN5jFjZ/14920
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",ESPN 🇨🇴
@@ -198,6 +218,8 @@ https://atemecdnbalancer-voe.sysln.id/live/eds/FashionTV/mediampd/FashionTV.mpd
 https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",FIGHT SPORTS
 https://d2tjypxxy769fn.cloudfront.net/out/v1/73b7057c72da4615888a11b02a6cbb3c/index.mpd
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",FIGHT SPORTS -1
+http://cdn.nng.cloudns.us/live/m3u8/sprt/d7d981d1df08d72.m3u8
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",FIRST LIFESTYLE
 https://atemecdnbalancer-voe.sysln.id/live/eds/FirstLifestyleHD/mediampd/FirstLifestyleHD.mpd
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",FOOD NETWORK
@@ -230,6 +252,8 @@ http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5417a212ff9fba68282fbf
 https://proxyvn.utako.moe/ph.php?&isp=1&id=cs03
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",GOLF+
 https://cdnjkt913.transvision.co.id:1000/live/master/3/4028c68571b3914b01720e7ff4376d21/manifest.mpd
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",GOLFPASS HD
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65493029ab052400089e9d2f/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c291881-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=fc355a72-e401-4038-a2fd-7378aedc3a6f&serverSideAds=false&checkedby:iptvcat.com
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",HGTV
 https://atemecdnbalancer-voe.sysln.id/live/eds/HGTVHD/mediampd/HGTVHD.mpd
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",HISTORY
@@ -242,14 +266,20 @@ https://atemecdnbalancer-voe.sysln.id/live/eds/HoreeHD/mediampd/HoreeHD.mpd
 http://tv.8dott.xyz:80/live/samuel/samuel123456/94058.ts
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",HORSE TV
 https://a-cdn.klowdtv.com/live2/horsetv_720p/playlist.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",Hutang Nyawa
+https://drive.usercontent.google.com/download?id=1A8Jh5ZS_GqDNaX1aHVyMqxoI5SSC-ivE&export=download&authuser=1&confirm=t&uuid=2143a717-e836-4c2d-adc9-9af67f59b997&at=APcmpowm3hrltEFCLHTmrRj1GHwQ:1745280398123
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",IMPACT! WRESTLING
 https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/59b722526996084038c01e1b/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",IMPACT! WRESTLING -1
+https://d2p372oxiwmcn1.cloudfront.net/hls/main.m3u8
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",INDOSIAR
 https://atemecdnbalancer-voe.sysln.id/live/eds/IndosiarHD/mediampd/IndosiarHD.mpd
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",INDOSIAR BRI LIGA 1
 https://warningfm.github.io/v3/live/str/id/575eeb9f08dc8db.m3u8
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",INTER TV ᴴᴰ
 https://ilglobotv-live.akamaized.net/channels/InterTV/Live.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",JOURNAL DU GOLF
+https://raw.githubusercontent.com/schumijo/iptv/main/playlists/jdg-tv/jdg-tv.m3u8
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",JUST FISHING
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/61b33085897b9d000702b72e/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=1b1e2704-4b81-11ef-a8ac-e146e4e7be02&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=40e61b35-9683-4394-86ae-756247e07690
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",KAIROS
@@ -308,6 +338,8 @@ https://atemecdnbalancer-voe.sysln.id/live/eds/RockEntertainmentHD/mediampd/Rock
 https://stream-node2.rri.co.id/streaming/37/9337/rrilabuanbajopro1.mp3
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",SCTV
 https://atemecdnbalancer-voe.sysln.id/live/eds/SCTVHD/mediampd/SCTVHD.mpd
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",SERIE A 1 PLUTO
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5e9f2c05172a0f0007db4786/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=d0170d70-8952-11ef-8353-f70668e6a0ea&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=81c0c5ee-095f-4c79-94e3-b24647048b62&userId=&serverSideAds=true
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",SETANTA SPORT
 http://tv.8dott.xyz:80/live/samuel/samuel123456/428868.ts
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",SHARJAH SPORT
@@ -327,15 +359,21 @@ http://202.80.222.20/cdn/iptv/Tvod/001/channel2000144/1024.m3u8
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",Soccer Channel-HD
 https://d2xz2v5wuvgur6.cloudfront.net/out/v1/63c0da12bb4d48afbaf053f51dff2353/index.mpd
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",SPOTV
-https://atemecdnbalancer-voe.sysln.id/live/eds/SPOTVHD/mediampd/SPOTVHD.mpd
-#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",SPOTV -1
 https://d3b0v7fggu5zwm.cloudfront.net/out/v1/b4814ae93ca84dd3bb5b0aff76ca263f/index.mpd
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",SPOTV -1
+https://atemecdnbalancer-voe.sysln.id/live/eds/SPOTVHD/mediampd/SPOTVHD.mpd
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",SPOTV (TVOD)
 http://202.80.222.20/cdn/iptv/Tvod/001/channel2000160/1024.m3u8
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",SPOTV 2 (TVOD)
 http://202.80.222.20/cdn/iptv/Tvod/001/channel2000138/1024.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",STAR SPORTS 1 HD
+https://live.dinesh29.com.np/stream/jiotvplus/starsportshd1/master.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",STAR SPORTS 2 HD
+https://live.dinesh29.com.np/stream/jiotvplus/starsportshd2/master.m3u8
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",STAR SPORTS 2 ᴴᴰ
 http://iptvtree.net:8080/F28312/cc1dc138/16619
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",STAR SPORTS SELECT 1 HD
+https://live.dinesh29.com.np/stream/jiotvplus/starsportsselecthd1/master.m3u8
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",STAR SPORTS SELECT 1 ᴴᴰ
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/33356
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",SUPER SPORT 1
@@ -350,6 +388,8 @@ https://atemecdnbalancer-voe.sysln.id/live/eds/TBNAsia/mediampd/TBNAsia.mpd
 https://tennischannel-int-samsunguk.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",TENNIS CHANNEL 2
 http://49.0.64.96:8007/TENNIS
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",THAGHUT (FHD)
+https://drive.usercontent.google.com/download?id=1wQui7I9Ucl9Sa1MU9ZbmIrleFbe_VEqf&export=download&authuser=0&confirm=t&uuid=ec6a583e-7b8a-44ba-9dd7-a93c9dd7a543&at=APvzH3oECIWDBprkqofOSf9Jz82S%3A1735813166311
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",TLC
 https://atemecdnbalancer-voe.sysln.id/live/eds/TLCHD/mediampd/TLCHD.mpd
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",TNT Sports 1
@@ -366,6 +406,8 @@ https://atemecdnbalancer-voe.sysln.id/live/eds/TransTVHD/mediampd/TransTVHD.mpd
 https://www.livedoomovies.com:4432/02_epl1_720p/chunklist.m3u8|user-agent=Mozilla/5.0
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",TRUE BEINSPORTS 2
 https://www.livedoomovies.com:4432/02_epl2_720p/chunklist.m3u8|user-agent=Mozilla/5.0
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",TRUE GOLF CHANNEL
+https://github.com/BONDiptv/m3u8/raw/refs/heads/main/trueGOLF.m3u8
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",TRUE PREMIERE FOOTBALL 1
 https://www.livedoomovies.com:4432/02_PremierHD1_720p/chunklist.m3u8|user-agent=Mozilla/5.0
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",TRUE PREMIERE FOOTBALL 2
