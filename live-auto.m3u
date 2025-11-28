@@ -1,5 +1,15 @@
 #EXTM3U
 
+#EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2025-11-28",--- ⚽ LIVE FOOTBALL 2025-11-28 ---
+https://separator.channel.available/offline.m3u8
+#EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2025-11-28",[NO LIVE MATCHES FOUND FOR THIS DATE]
+https://placeholder.channel.available/offline.m3u8
+
+#EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2025-11-29",--- ⚽ LIVE FOOTBALL 2025-11-29 ---
+https://separator.channel.available/offline.m3u8
+#EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2025-11-29",[NO LIVE MATCHES FOUND FOR THIS DATE]
+https://placeholder.channel.available/offline.m3u8
+
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",--- 🌟 SPORTS GLOBAL & UMUM ---
 https://separator.channel.available/offline.m3u8
 #EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",Abu Dhabi Sports TV 2
