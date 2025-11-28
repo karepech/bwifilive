@@ -3,15 +3,20 @@ import fetch from "node-fetch";
 import axios from "axios";
 
 /*
-  generate-live.js (FINAL FIX: Kategori Tunggal "SPORT" sebagai Fallback Statis)
-  - Saluran Football yang live/upcoming pindah ke grup dinamis (⚽ LIVE FOOTBALL [Tanggal]).
-  - SEMUA saluran lain (non-live football, Basket, WWE, dll) jatuh ke grup statis tunggal "SPORT".
+  generate-live.js (FINAL FIX: Stable Fetch, H+1 Dynamic Grouping, Single Static Group)
+  - Channels with live football matches move to ⚽ LIVE FOOTBALL [Tanggal] (H+0, H+1).
+  - All other channels (non-football, non-live football) fall into single group "SPORT".
+  - Global duplication is applied, including duplicate URLs from source.
 */
 
 const SOURCE_M3US = [
   
   "https://bakulwifi.my.id/live.m3u",
-  
+  "https://donzcompany.shop/donztelevision/donztelevision.php",
+  "https://beww.pl/fifa.m3u",
+  "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
+  "https://pastebin.com/raw/faZ6xjCu",
+  "http://bit.ly/kopinyaoke" 
 ];
 
 // =======================================================
@@ -173,10 +178,10 @@ function getEventMatchInfo(channel, events) {
 
 
 async function main() {
-  console.log("Starting generate-live.js (Single SPORT Fallback)...");
+  console.log("Starting generate-live.js (H+1 Dynamic Grouping, Single Fallback)...");
   
   const output = []; 
-  // Grup Statis Tunggal yang baru
+  // Perubahan Group Statis Tunggal
   const FALLBACK_GROUP = "SPORT";
   const LIVE_FOOTBALL_PREFIX = "⚽ LIVE FOOTBALL";
 
@@ -203,7 +208,7 @@ async function main() {
   let matchedCount = 0;
 
   // =========================================================================
-  // TAHAP 1: PEMETAAN KE GRUP DINAMIS/STATIS
+  // TAHAP 1: PEMETAAN DAN PENYEMATAN DETAIL JADWAL
   // =========================================================================
   
   const processedChannels = [];
@@ -228,7 +233,9 @@ async function main() {
             isLive = eventMatchInfo.isLive;
         } 
         // Jika saluran Football tidak live, groupTitle tetap FALLBACK_GROUP ("SPORT")
-    } 
+    } else {
+         // Saluran non-football, groupTitle tetap FALLBACK_GROUP ("SPORT")
+    }
     
     matchedCount++;
     
