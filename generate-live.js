@@ -226,7 +226,7 @@ async function main() {
     processedChannels.push({
         name: finalChannelName,
         url: ch.url,
-        groupTitle: groupTitle, 
+        groupTitle: groupTitle, // Bisa dinamis (Tanggal) atau statis (FALLBACK)
         originalCategory: staticCategory, 
         isLive: isLive
     });
@@ -274,9 +274,11 @@ async function main() {
       
       let finalGroup = ch.groupTitle;
 
-      // Masukkan ke Map (Semua saluran statis dan non-live bola masuk ke FALLBACK_GROUP)
+      // FIX BUG: Saluran yang tidak live dan non-football harus masuk ke FALLBACK
+      // Karena groupTitle-nya sudah diset ke FALLBACK_GROUP di TAHAP 1, ini aman.
       if (!outputMap.has(finalGroup)) {
-          outputMap.set(finalGroup, []);
+           // Ini seharusnya tidak terpicu dengan kode TAHAP 1 yang baru.
+           finalGroup = FALLBACK_GROUP;
       }
       outputMap.get(finalGroup).push(ch);
   }
@@ -296,12 +298,13 @@ async function main() {
       if (b.startsWith(LIVE_FOOTBALL_PREFIX)) return 1;
       
       // Prioritas 2: Grup Statis (Fallback) selalu di bawah
-      return 1;
+      return a.localeCompare(b);
   });
 
   for (const groupTitle of sortedGroups) {
       const channelsInGroup = outputMap.get(groupTitle);
       
+      // Tuliskan grup hanya jika ada isinya ATAU jika itu adalah grup LIVE FOOTBALL (force header)
       if (channelsInGroup.length > 0 || groupTitle.startsWith(LIVE_FOOTBALL_PREFIX)) {
           // Tuliskan header grup
           output.push(`\n#EXTINF:-1 group-title=\"${groupTitle}\",--- ${groupTitle} ---`);
