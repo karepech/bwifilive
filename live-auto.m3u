@@ -5,8 +5,18 @@ https://d3b0v7fggu5zwm.cloudfront.net/out/v1/b4814ae93ca84dd3bb5b0aff76ca263f/in
 https://d2tjypxxy769fn.cloudfront.net/out/v1/46d9cf39b9a84183b8d5022ac8f4bc41/index.mpd
 #EXTINF:-1 group-title="FOOTBALL LIVE (Jadwal Harian)",Peacock Premier League
 https://fsly.stream.peacocktv.com/Content/CMAF_CTR-4s/Live/channel(vc1021n07j)/master.mpd
+#EXTINF:-1 group-title="UMUM & MULTISPORT",Dubai Sports 1
+https://dmidspta.cdn.mgmlcdn.com/dubaisports/smil:dubaisports.stream.smil/master.m3u8
+#EXTINF:-1 group-title="UMUM & MULTISPORT",Dubai Sports 2
+https://dmitwlvvll.cdn.mangomolo.com/dubaisportshd/smil:dubaisportshd.smil/master.m3u8
+#EXTINF:-1 group-title="UMUM & MULTISPORT",Dubai Sports 3
+https://dmitwlvvll.cdn.mangomolo.com/dubaisportshd5/smil:dubaisportshd5.smil/master.m3u8
 #EXTINF:-1 group-title="UMUM & MULTISPORT",DAZN RINGSIDE
 https://aegis-cloudfront-1.tubi.video/bfad29e2-5bee-44f3-8256-127324e8b106/playlist.m3u8
+#EXTINF:-1 group-title="UMUM & MULTISPORT",9-LIVE CHANNEL
+https://wahyu1ptv.pages.dev/ZiggoSport2-HD.m3u8
+#EXTINF:-1 group-title="UMUM & MULTISPORT",11-LIVE CHANNEL
+https://vo-live-media.cdb.cdn.orange.com/Content/Channel/AbuDhabiSportsChannel2/HLS/index.m3u8
 #EXTINF:-1 group-title="UMUM & MULTISPORT",ASTRO ARENA 2 ᴴᴰ
 https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/Astar2.m3u8
 #EXTINF:-1 group-title="UMUM & MULTISPORT",ASTRO SPORTS PLUS ᴴᴰ
@@ -15,8 +25,6 @@ https://raw.githubusercontent.com/Cutsiffa/pl/refs/heads/main/Astpl4.m3u8
 https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/AstFut.m3u8
 #EXTINF:-1 group-title="FOOTBALL LIVE (Jadwal Harian)",SONY TEN 1 ᴴᴰ
 https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/Son1.m3u8
-#EXTINF:-1 group-title="FOOTBALL LIVE (Jadwal Harian)",SONY TEN 2 ᴴᴰ
-https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/Son2.m3u8
 #EXTINF:-1 group-title="FOOTBALL LIVE (Jadwal Harian)",BEIN SPORTS 4
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142758
 #EXTINF:-1 group-title="FOOTBALL LIVE (Jadwal Harian)",BEIN SPORTS 5
@@ -53,8 +61,6 @@ https://github.com/udzaa2238/tvtb-me/raw/refs/heads/main/hub-sport-1-1.m3u8?raw=
 https://github.com/udzaa2238/tvtb-me/raw/refs/heads/main/hub-sport-2-1.m3u8?raw=true
 #EXTINF:-1 group-title="UMUM & MULTISPORT",HUB SPORTS 3
 https://github.com/udzaa2238/tvtb-me/raw/refs/heads/main/hub-sport-3-1.m3u8?raw=true
-#EXTINF:-1 group-title="UMUM & MULTISPORT",STAR SPORTS SELECT 1 ᴴᴰ
-http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/33356
 #EXTINF:-1 group-title="FOOTBALL LIVE (Jadwal Harian)",ESPN VIVO
 http://sinalprivado.info:80/live/632035/GqGcFV4ntu/22002.ts
 #EXTINF:-1 group-title="UMUM & MULTISPORT",ESPN 3
@@ -67,14 +73,10 @@ http://supersonictv.live:8080/006779/439866/22199
 http://supersonictv.live:8080/006779/439866/22208
 #EXTINF:-1 group-title="UMUM & MULTISPORT",ESPN U
 https://fl31.moveonjoy.com/ESPN_U/tracks-v1a1/mono.ts.m3u8
-#EXTINF:-1 group-title="UMUM & MULTISPORT",Abu Dhabi Sports TV 2
-https://vo-live-media.cdb.cdn.orange.com/Content/Channel/AbuDhabiSportsChannel2/HLS/index.m3u8
 #EXTINF:-1 group-title="UMUM & MULTISPORT",Bahrain Sports 1
 https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8
 #EXTINF:-1 group-title="UMUM & MULTISPORT",Bahrain Sports 2
 https://5c7b683162943.streamlock.net/live/ngrp:bahrainsportstwo_all/playlist.m3u8
-#EXTINF:-1 group-title="UMUM & MULTISPORT",DUBAI SPORTS 1
-https://dmidspta.cdn.mgmlcdn.com/dubaisports/smil:dubaisports.stream.smil/master.m3u8
 #EXTINF:-1 group-title="UMUM & MULTISPORT",DUBAI SPORTS 2
 https://dmitwlvvll.cdn.mgmlcdn.com/dubaisportshd/smil:dubaisportshd.smil/master.m3u8
 #EXTINF:-1 group-title="UMUM & MULTISPORT",DUBAI SPORTS 3
@@ -97,6 +99,8 @@ http://tvmate.icu:8080/69NpyV/884735/53717
 https://amg17560-fcb-amg17560c1-rakuten-uk-4891.playouts.now.amagi.tv/playlist/amg17560-fcbarcelona-topbarcaenglish-rakutenuk/playlist.m3u8
 #EXTINF:-1 group-title="FOOTBALL LIVE (Jadwal Harian)",MILAN TV ᴴᴰ
 http://medotv.nl:8000/RAMBOfoundedoninternetsoIchangedTheFuckinguSERNAMelol123/5caU9cN5jFjZ/127757
+#EXTINF:-1 group-title="KOMPETISI (MMA/WRESTLING)",WWE ᴴᴰ
+http://line.lemotv.cc:80/Ivica5274/juric4005/2903216
 #EXTINF:-1 group-title="KOMPETISI (MMA/WRESTLING)",IMPACT! WRESTLING
 https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/59b722526996084038c01e1b/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel
 #EXTINF:-1 group-title="KOMPETISI (MMA/WRESTLING)",BELLATOR MMA
@@ -119,11 +123,3 @@ https://svs.itworkscdn.net/smc4sportslive/smc4.smil/playlist.m3u8?checkedby:hlsc
 https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8
 #EXTINF:-1 group-title="UMUM & MULTISPORT",FUBO SPORTS 1
 http://23.227.140.75:8880/live/ElizJohn614/fdtXMLpTA9/418199.ts
-#EXTINF:-1 group-title="UMUM & MULTISPORT",SPORT.TV 1
-https://wahyu1ptv.pages.dev/Sport.TV1-HD.m3u8
-#EXTINF:-1 group-title="UMUM & MULTISPORT",SPORT.TV 2
-https://wahyu1ptv.pages.dev/Sport.TV2-HD.m3u8
-#EXTINF:-1 group-title="FOOTBALL LIVE (Jadwal Harian)",EPL 10 DAZN IP
-http://supersonictv.live:8080/Allen123/Allen123/7627
-#EXTINF:-1 group-title="FOOTBALL LIVE (Jadwal Harian)",SERIE A 1 PLUTO
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5e9f2c05172a0f0007db4786/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=d0170d70-8952-11ef-8353-f70668e6a0ea&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=81c0c5ee-095f-4c79-94e3-b24647048b62&userId=&serverSideAds=true
