@@ -11,9 +11,6 @@ const SOURCE_M3US = [
   
   "https://bakulwifi.my.id/live.m3u",
   "https://donzcompany.shop/donztelevision/donztelevision.php",
-  "https://beww.pl/fifa.m3u",
-  "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
-  "https://pastebin.com/raw/faZ6xjCu",
   "http://bit.ly/kopinyaoke" 
 ];
 
