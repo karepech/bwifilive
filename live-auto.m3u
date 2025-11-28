@@ -1,408 +1,184 @@
 #EXTM3U
 
-#EXTINF:-1 group-title="BADMINTON",--- BADMINTON ---
+#EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2025-11-28",--- ⚽ LIVE FOOTBALL 2025-11-28 ---
 https://separator.channel.available/offline.m3u8
-#EXTINF:-1 group-title="BADMINTON",ASTRO BADMINTON 1
-https://smart.946985.filegear-sg.me/smart.php?id=go_badminton1
-#EXTINF:-1 group-title="BADMINTON",ASTRO BADMINTON 1 -1
-https://smart.946985.filegear-sg.me/smart.php?id=go_badminton2
+#EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2025-11-28",[NO LIVE MATCHES FOUND FOR THIS DATE]
+https://placeholder.channel.available/offline.m3u8
 
-#EXTINF:-1 group-title="BASKET",--- BASKET ---
+#EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2025-11-29",--- ⚽ LIVE FOOTBALL 2025-11-29 ---
 https://separator.channel.available/offline.m3u8
-#EXTINF:-1 group-title="BASKET",ABC AUSTRALIA
-https://atemecdnbalancer-voe.sysln.id/live/eds/ABC_Australia/mediampd/ABC_Australia.mpd
-#EXTINF:-1 group-title="BASKET",AFN
-https://atemecdnbalancer-voe.sysln.id/live/eds/AFNHD/mediampd/AFNHD.mpd
-#EXTINF:-1 group-title="BASKET",ALJAZEERA ARAB
-https://atemecdnbalancer-voe.sysln.id/live/eds/AlJzrArab/mediampd/AlJzrArab.mpd
-#EXTINF:-1 group-title="BASKET",ALJAZEERA ENGLISH
-https://atemecdnbalancer-voe.sysln.id/live/eds/AlJazeeraIntHD/mediampd/AlJazeeraIntHD.mpd
-#EXTINF:-1 group-title="BASKET",ANIMAL PLANET
-https://atemecdnbalancer-voe.sysln.id/live/eds/AnimalPlanetHD/mediampd/AnimalPlanetHD.mpd
-#EXTINF:-1 group-title="BASKET",AXN
-https://atemecdnbalancer-voe.sysln.id/live/eds/AXNHD/mediampd/AXNHD.mpd
-#EXTINF:-1 group-title="BASKET",BLOOMBERG
-https://atemecdnbalancer-voe.sysln.id/live/eds/BloombergHD/mediampd/BloombergHD.mpd
-#EXTINF:-1 group-title="BASKET",CARTOONITO
-https://atemecdnbalancer-voe.sysln.id/live/eds/CartoonitoHD/mediampd/CartoonitoHD.mpd
-#EXTINF:-1 group-title="BASKET",CCTV4
-https://atemecdnbalancer-voe.sysln.id/live/eds/CCTV4/mediampd/CCTV4.mpd
-#EXTINF:-1 group-title="BASKET",CELESTIAL MOVIES
-https://atemecdnbalancer-voe.sysln.id/live/eds/CelestialMoviesHD/mediampd/CelestialMoviesHD.mpd
-#EXTINF:-1 group-title="BASKET",CGTN
-https://atemecdnbalancer-voe.sysln.id/live/eds/CGTN/mediampd/CGTN.mpd
-#EXTINF:-1 group-title="BASKET",CGTN DOC
-https://atemecdnbalancer-voe.sysln.id/live/eds/CGTNDocumentaryHD/mediampd/CGTNDocumentaryHD.mpd
-#EXTINF:-1 group-title="BASKET",CITRA BIOSKOP
-https://atemecdnbalancer-voe.sysln.id/live/eds/CitraBioskopHD/mediampd/CitraBioskopHD.mpd
-#EXTINF:-1 group-title="BASKET",CITRA DANGDUT
-https://atemecdnbalancer-voe.sysln.id/live/eds/CitraDangdutHD/mediampd/CitraDangdutHD.mpd
-#EXTINF:-1 group-title="BASKET",CITRA DRAMA
-https://atemecdnbalancer-voe.sysln.id/live/eds/CitraDramaHD/mediampd/CitraDramaHD.mpd
-#EXTINF:-1 group-title="BASKET",CITRA ENTERTAINMENT
-https://atemecdnbalancer-voe.sysln.id/live/eds/CitraEntertainmentHD/mediampd/CitraEntertainmentHD.mpd
-#EXTINF:-1 group-title="BASKET",CITRA MUSLIM
-https://atemecdnbalancer-voe.sysln.id/live/eds/CitraMuslimHD/mediampd/CitraMuslimHD.mpd
-#EXTINF:-1 group-title="BASKET",CNA
-https://atemecdnbalancer-voe.sysln.id/live/eds/CNAHD/mediampd/CNAHD.mpd
-#EXTINF:-1 group-title="BASKET",CNN INT
-https://atemecdnbalancer-voe.sysln.id/live/eds/CNNIntHD/mediampd/CNNIntHD.mpd
-#EXTINF:-1 group-title="BASKET",CRIME INVESTIGATION
-https://atemecdnbalancer-voe.sysln.id/live/eds/CrimeInvestigationHD/mediampd/CrimeInvestigationHD.mpd
-#EXTINF:-1 group-title="BASKET",DAAI TV
-https://atemecdnbalancer-voe.sysln.id/live/eds/DAAITV/mediampd/DAAITV.mpd
-#EXTINF:-1 group-title="BASKET",DISCOVERY CHANNEL
-https://atemecdnbalancer-voe.sysln.id/live/eds/DiscoveryHD/mediampd/DiscoveryHD.mpd
-#EXTINF:-1 group-title="BASKET",DMAX
-https://atemecdnbalancer-voe.sysln.id/live/eds/DMAXHD/mediampd/DMAXHD.mpd
-#EXTINF:-1 group-title="BASKET",DREAMWORKS
-https://atemecdnbalancer-voe.sysln.id/live/eds/DreamWorksHD/mediampd/DreamWorksHD.mpd
-#EXTINF:-1 group-title="BASKET",EUROSPORT
-https://atemecdnbalancer-voe.sysln.id/live/eds/EUROSPORTHD/mediampd/EUROSPORTHD.mpd
-#EXTINF:-1 group-title="BASKET",EWTN
-https://atemecdnbalancer-voe.sysln.id/live/eds/EWTN/mediampd/EWTN.mpd
-#EXTINF:-1 group-title="BASKET",FASHION TV
-https://atemecdnbalancer-voe.sysln.id/live/eds/FashionTV/mediampd/FashionTV.mpd
-#EXTINF:-1 group-title="BASKET",FIRST LIFESTYLE
-https://atemecdnbalancer-voe.sysln.id/live/eds/FirstLifestyleHD/mediampd/FirstLifestyleHD.mpd
-#EXTINF:-1 group-title="BASKET",FOOD NETWORK
-https://atemecdnbalancer-voe.sysln.id/live/eds/FoodNetworkHD/mediampd/FoodNetworkHD.mpd
-#EXTINF:-1 group-title="BASKET",FOX NEWS
-https://atemecdnbalancer-voe.sysln.id/live/eds/FOXNewsHD/mediampd/FOXNewsHD.mpd
-#EXTINF:-1 group-title="BASKET",GLOBAL TREKKER
-https://atemecdnbalancer-voe.sysln.id/live/eds/GlobalTrekkerHD/mediampd/GlobalTrekkerHD.mpd
-#EXTINF:-1 group-title="BASKET",HGTV
-https://atemecdnbalancer-voe.sysln.id/live/eds/HGTVHD/mediampd/HGTVHD.mpd
-#EXTINF:-1 group-title="BASKET",HISTORY
-https://atemecdnbalancer-voe.sysln.id/live/eds/HistoryHD/mediampd/HistoryHD.mpd
-#EXTINF:-1 group-title="BASKET",HITS MOVIES
-https://atemecdnbalancer-voe.sysln.id/live/eds/HitsMoviesHD/mediampd/HitsMoviesHD.mpd
-#EXTINF:-1 group-title="BASKET",HOREE
-https://atemecdnbalancer-voe.sysln.id/live/eds/HoreeHD/mediampd/HoreeHD.mpd
-#EXTINF:-1 group-title="BASKET",INDOSIAR
-https://atemecdnbalancer-voe.sysln.id/live/eds/IndosiarHD/mediampd/IndosiarHD.mpd
-#EXTINF:-1 group-title="BASKET",KAIROS
-https://atemecdnbalancer-voe.sysln.id/live/eds/Kairos/mediampd/Kairos.mpd
-#EXTINF:-1 group-title="BASKET",KBS WORLD
-https://atemecdnbalancer-voe.sysln.id/live/eds/KBSWorldHD/mediampd/KBSWorldHD.mpd
-#EXTINF:-1 group-title="BASKET",KIX
-https://atemecdnbalancer-voe.sysln.id/live/eds/KIXHD/mediampd/KIXHD.mpd
-#EXTINF:-1 group-title="BASKET",LOVE NATURE
-https://atemecdnbalancer-voe.sysln.id/live/eds/LoveNatureHD/mediampd/LoveNatureHD.mpd
-#EXTINF:-1 group-title="BASKET",METRO TV
-https://atemecdnbalancer-voe.sysln.id/live/eds/MetroTVHD/mediampd/MetroTVHD.mpd
-#EXTINF:-1 group-title="BASKET",MTV 90s
-https://atemecdnbalancer-voe.sysln.id/live/eds/MTV90sHD/mediampd/MTV90sHD.mpd
-#EXTINF:-1 group-title="BASKET",MTV LIVE
-https://atemecdnbalancer-voe.sysln.id/live/eds/MTVLiveHD/mediampd/MTVLiveHD.mpd
-#EXTINF:-1 group-title="BASKET",NBA TV
-https://smart.946985.filegear-sg.me/smart.php?id=Nba
-#EXTINF:-1 group-title="BASKET",NICK
-https://atemecdnbalancer-voe.sysln.id/live/eds/Nickelodeon/mediampd/Nickelodeon.mpd
-#EXTINF:-1 group-title="BASKET",NICK JR
-https://atemecdnbalancer-voe.sysln.id/live/eds/NickJr/mediampd/NickJr.mpd
-#EXTINF:-1 group-title="BASKET",ONE
-https://atemecdnbalancer-voe.sysln.id/live/eds/ONEHD/mediampd/ONEHD.mpd
-#EXTINF:-1 group-title="BASKET",REFORMED 21
-https://atemecdnbalancer-voe.sysln.id/live/eds/Reformed21HD/mediampd/Reformed21HD.mpd
-#EXTINF:-1 group-title="BASKET",ROCK ENTERTAINMENT
-https://atemecdnbalancer-voe.sysln.id/live/eds/RockEntertainmentHD/mediampd/RockEntertainmentHD.mpd
-#EXTINF:-1 group-title="BASKET",RRI LABUAN BAJO-PRO1
-https://stream-node2.rri.co.id/streaming/37/9337/rrilabuanbajopro1.mp3
-#EXTINF:-1 group-title="BASKET",SCTV
-https://atemecdnbalancer-voe.sysln.id/live/eds/SCTVHD/mediampd/SCTVHD.mpd
-#EXTINF:-1 group-title="BASKET",SPOTV
-https://atemecdnbalancer-voe.sysln.id/live/eds/SPOTVHD/mediampd/SPOTVHD.mpd
-#EXTINF:-1 group-title="BASKET",TBN ASIA
-https://atemecdnbalancer-voe.sysln.id/live/eds/TBNAsia/mediampd/TBNAsia.mpd
-#EXTINF:-1 group-title="BASKET",TLC
-https://atemecdnbalancer-voe.sysln.id/live/eds/TLCHD/mediampd/TLCHD.mpd
-#EXTINF:-1 group-title="BASKET",TRANS TV
-https://atemecdnbalancer-voe.sysln.id/live/eds/TransTVHD/mediampd/TransTVHD.mpd
-#EXTINF:-1 group-title="BASKET",TV9
-https://atemecdnbalancer-voe.sysln.id/live/eds/TV9/mediampd/TV9.mpd
-#EXTINF:-1 group-title="BASKET",TVN
-https://atemecdnbalancer-voe.sysln.id/live/eds/TvNHD/mediampd/TvNHD.mpd
-#EXTINF:-1 group-title="BASKET",TVN MOVIES
-https://atemecdnbalancer-voe.sysln.id/live/eds/TvNMoviesHD/mediampd/TvNMoviesHD.mpd
-#EXTINF:-1 group-title="BASKET",TVONE
-https://atemecdnbalancer-voe.sysln.id/live/eds/TvOne/mediampd/TvOne.mpd
-#EXTINF:-1 group-title="BASKET",TVRI
-https://atemecdnbalancer-voe.sysln.id/live/eds/TVRINasional/mediampd/TVRINasional.mpd
+#EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2025-11-29",[NO LIVE MATCHES FOUND FOR THIS DATE]
+https://placeholder.channel.available/offline.m3u8
 
-#EXTINF:-1 group-title="BOXING & MMA",--- BOXING & MMA ---
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",--- 🌟 SPORTS GLOBAL & UMUM ---
 https://separator.channel.available/offline.m3u8
-#EXTINF:-1 group-title="BOXING & MMA",BELLATOR MMA
-http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5ebc8688f3697d00072f7cf8/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT={TARGETOPT}&deviceId={PSID}&advertisingId={PSID}&us_privacy=1YNY&samsung_app_domain={APP_DOMAIN}&samsung_app_name={APP_NAME}&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
-#EXTINF:-1 group-title="BOXING & MMA",BOXING TV
-https://stitcher.pluto.tv/stitch/hls/channel/64df7ab4dfa32400083c517blivestitch/master.m3u8?deviceType=web&servertSideAds=false&deviceMake=safari&deviceVersion=1&deviceId=spencer&appVersion=1&deviceDNT=0&deviceModel=web&sid=f9f2b24b-6a97-11ef-9ed7-d66fb14cb385&profilesFromStream=true
-#EXTINF:-1 group-title="BOXING & MMA",DAZN RINGSIDE
-https://aegis-cloudfront-1.tubi.video/bfad29e2-5bee-44f3-8256-127324e8b106/playlist.m3u8
-#EXTINF:-1 group-title="BOXING & MMA",FIGHT SPORTS
-https://d2tjypxxy769fn.cloudfront.net/out/v1/73b7057c72da4615888a11b02a6cbb3c/index.mpd
-#EXTINF:-1 group-title="BOXING & MMA",GLORY KICKBOXING
-http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5417a212ff9fba68282fbf5e/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT={TARGETOPT}&deviceId={PSID}&advertisingId={PSID}&us_privacy=1YNY&samsung_app_domain={APP_DOMAIN}&samsung_app_name={APP_NAME}&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
-#EXTINF:-1 group-title="BOXING & MMA",XTREM SPORTS
-https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e0b81a5c-6ab5-48cd-aaa9-f82de4ab5bf9/manifest.m3u8
-
-#EXTINF:-1 group-title="FOOTBALL",--- FOOTBALL ---
-https://separator.channel.available/offline.m3u8
-#EXTINF:-1 group-title="FOOTBALL",AFC LEAGUE TWO⁽ˢᵉʳᵛᵉʳ ¹⁾
-http://103.172.71.153:9981/stream/channelid/353195065?profile=pass
-#EXTINF:-1 group-title="FOOTBALL",ASTRO FOOTBALL
-https://smart.946985.filegear-sg.me/smart.php?id=go_assp4
-#EXTINF:-1 group-title="FOOTBALL",ASTRO FOOTBALL ᴴᴰ
-https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/AstFut.m3u8
-#EXTINF:-1 group-title="FOOTBALL",Astro Premier League
-https://a1xs.vip/1100030
-#EXTINF:-1 group-title="FOOTBALL",ASTRO PREMIER LEAGUE
-https://smart.946985.filegear-sg.me/smart.php?id=Assp1
-#EXTINF:-1 group-title="FOOTBALL",ASTRO PREMIER LEAGUE 1 ᴴᴰ
-http://tv.8dott.xyz:80/live/samuel/samuel123456/709263.ts
-#EXTINF:-1 group-title="FOOTBALL",Astro Premier League 2
-https://a1xs.vip/1100031
-#EXTINF:-1 group-title="FOOTBALL",ASTRO PREMIER LEAGUE 2
-https://smart.946985.filegear-sg.me/smart.php?id=Assp2
-#EXTINF:-1 group-title="FOOTBALL",B1 Premier League 1
-https://raw.githubusercontent.com/B-inal-123/s-asia/inal-22/HubsportPL1.m3u8
-#EXTINF:-1 group-title="FOOTBALL",B1 Premier League 2
-https://raw.githubusercontent.com/B-inal-123/s-asia/inal-22/HubsportPL2.m3u8
-#EXTINF:-1 group-title="FOOTBALL",B1 Premier League 3
-https://raw.githubusercontent.com/B-inal-123/s-asia/inal-22/HubsportPL3.m3u8
-#EXTINF:-1 group-title="FOOTBALL",B1 Premier League 4
-https://raw.githubusercontent.com/B-inal-123/s-asia/inal-22/HubsportPL4.m3u8
-#EXTINF:-1 group-title="FOOTBALL",B1 Premier League 5
-https://raw.githubusercontent.com/B-inal-123/s-asia/inal-22/HubsportPL5.m3u8
-#EXTINF:-1 group-title="FOOTBALL",BARCA TV ᴴᴰ
-https://amg17560-fcb-amg17560c1-rakuten-uk-4891.playouts.now.amagi.tv/playlist/amg17560-fcbarcelona-topbarcaenglish-rakutenuk/playlist.m3u8
-#EXTINF:-1 group-title="FOOTBALL",BEIN SPORTS 1
-https://d6m3sfa7e58z5.cloudfront.net/out/v1/3b0660e05eed4d769521eb0275aab3ab/index.mpd
-#EXTINF:-1 group-title="FOOTBALL",BEIN SPORTS 2
-https://d6m3sfa7e58z5.cloudfront.net/out/v1/cfca527d0f16403396a71b2d3d54c32f/index.mpd
-#EXTINF:-1 group-title="FOOTBALL",BEIN SPORTS 2 (TVOD)
-http://202.80.222.20/cdn/iptv/Tvod/001/channel2000148/1024.m3u8
-#EXTINF:-1 group-title="FOOTBALL",BEIN SPORTS 3
-https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
-#EXTINF:-1 group-title="FOOTBALL",BEIN SPORTS 4
-http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142758
-#EXTINF:-1 group-title="FOOTBALL",BEIN SPORTS 4 -1
-https://d6m3sfa7e58z5.cloudfront.net/out/v1/2e55bc8199044c27b1dbb827af65a04f/index.mpd
-#EXTINF:-1 group-title="FOOTBALL",BEIN SPORTS 5
-http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142759
-#EXTINF:-1 group-title="FOOTBALL",BEIN SPORTS 5 -1
-https://d6m3sfa7e58z5.cloudfront.net/out/v1/fe4d00f07e2f43b789102b84b4d243a9/index.mpd
-#EXTINF:-1 group-title="FOOTBALL",BEIN SPORTS 6
-http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
-#EXTINF:-1 group-title="FOOTBALL",BEIN SPORTS 7
-http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142761
-#EXTINF:-1 group-title="FOOTBALL",BEIN SPORTS 8
-http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142752
-#EXTINF:-1 group-title="FOOTBALL",BEIN SPORTS EXTRA
-https://amg01334-beinsportsllc-beinxtra-localnow-kcy6r.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="FOOTBALL",BRI SUPER LEAGUE⁽ˢᵉʳᵛᵉʳ ²⁾
-https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/BRISuper2.m3u8
-#EXTINF:-1 group-title="FOOTBALL",DAZN LALIGA
-http://tv.8dott.xyz:80/live/samuel/samuel123456/837876.ts
-#EXTINF:-1 group-title="FOOTBALL",DISNEY CHANNEL
-https://a77aivottepl-a.akamaihd.net/pdx-nitro/live/clients/dash/enc/zuf794yutz/out/v1/ca3534bfe4f148298b36719204d108e0/cenc.mpd
-#EXTINF:-1 group-title="FOOTBALL",FIFA+ SPORT
-https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8
-#EXTINF:-1 group-title="FOOTBALL",FOOTBALL TV
-https://cdnjkt913.transvision.co.id:1000/live/master/1/4028c68582449a2e0182597777ec21f3/manifest.mpd
-#EXTINF:-1 group-title="FOOTBALL",Fox Sports 501 FHD
-https://a1xs.vip/700001
-#EXTINF:-1 group-title="FOOTBALL",Fox Sports 502 FHD
-https://a1xs.vip/700002
-#EXTINF:-1 group-title="FOOTBALL",Fox Sports 503 FHD
-https://a1xs.vip/700003
-#EXTINF:-1 group-title="FOOTBALL",Fox Sports 504 FHD
-https://a1xs.vip/700004
-#EXTINF:-1 group-title="FOOTBALL",Fox Sports 505 FHD
-https://a1xs.vip/700005
-#EXTINF:-1 group-title="FOOTBALL",Fox Sports 506 FHD
-https://a1xs.vip/700006
-#EXTINF:-1 group-title="FOOTBALL",Fox Sports 507 FHD
-https://a1xs.vip/700007
-#EXTINF:-1 group-title="FOOTBALL",INDOSIAR BRI LIGA 1
-https://warningfm.github.io/v3/live/str/id/575eeb9f08dc8db.m3u8
-#EXTINF:-1 group-title="FOOTBALL",INTER TV ᴴᴰ
-https://ilglobotv-live.akamaized.net/channels/InterTV/Live.m3u8
-#EXTINF:-1 group-title="FOOTBALL",MILAN TV ᴴᴰ
-http://medotv.nl:8000/RAMBOfoundedoninternetsoIchangedTheFuckinguSERNAMelol123/5caU9cN5jFjZ/127757
-#EXTINF:-1 group-title="FOOTBALL",MOJI Proliga Volley
-http://iptvtree.net:8080/test_acct/ohbo1veifa4AhD/298550
-#EXTINF:-1 group-title="FOOTBALL",MUTV ᴴᴰ
-http://tvmate.icu:8080/69NpyV/884735/53717
-#EXTINF:-1 group-title="FOOTBALL",PEGADAIAN CHAMPIONSHIP⁽ˢᵉʳᵛᵉʳ ¹⁾
-http://iptvtree.net:8080/live/F28312/cc1dc138/162138.ts
-#EXTINF:-1 group-title="FOOTBALL",PEGADAIAN CHAMPIONSHIP⁽ˢᵉʳᵛᵉʳ ³⁾
-https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/BRISuper1.m3u8
-#EXTINF:-1 group-title="FOOTBALL",PLUTO 00s REPLAY
-https://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/62ba60f059624e000781c436/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=web&servertSideAds=false&&deviceMake=github.com/inspirationlinks&deviceDNT=1
-#EXTINF:-1 group-title="FOOTBALL",PREMIER LEAGUE TV 🇺🇸
-https://fsly.stream.peacocktv.com/Content/CMAF_CTR-4s/Live/channel(vc1021n07j)/master.mpd
-#EXTINF:-1 group-title="FOOTBALL",RCTI LIVE SPORTS
-https://liveplus.rctiplus.id/RTMP-IN.m3u8
-#EXTINF:-1 group-title="FOOTBALL",SKY SPORTS EPL
-https://smart.946985.filegear-sg.me/smart.php?id=tiankongepl
-#EXTINF:-1 group-title="FOOTBALL",SKY SPORTS FOOTBALL
-http://tv.8dott.xyz:80/live/samuel/samuel123456/35798.ts
-#EXTINF:-1 group-title="FOOTBALL",Soccer Channel
-https://fta4-cdn-flr.visionplus.id/out/v1/63c0da12bb4d48afbaf053f51dff2353/index.mpd|Referer=https://www.visionplus.id/&user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
-#EXTINF:-1 group-title="FOOTBALL",SOCCER CHANNEL (TVOD)
-http://202.80.222.20/cdn/iptv/Tvod/001/channel2000144/1024.m3u8
-#EXTINF:-1 group-title="FOOTBALL",Soccer Channel-HD
-https://d2xz2v5wuvgur6.cloudfront.net/out/v1/63c0da12bb4d48afbaf053f51dff2353/index.mpd
-#EXTINF:-1 group-title="FOOTBALL",TNT Sports 1
-http://line.extraott-iptv.com:88/2755789541/1300714776/13780
-#EXTINF:-1 group-title="FOOTBALL",TNT Sports 2
-http://line.extraott-iptv.com:88/2755789541/1300714776/13779
-#EXTINF:-1 group-title="FOOTBALL",TNT Sports 3
-http://line.extraott-iptv.com:88/2755789541/1300714776/13778
-#EXTINF:-1 group-title="FOOTBALL",TNT Sports 4
-http://line.extraott-iptv.com:88/2755789541/1300714776/153713
-#EXTINF:-1 group-title="FOOTBALL",TRUE BEINSPORTS 1
-https://www.livedoomovies.com:4432/02_epl1_720p/chunklist.m3u8|user-agent=Mozilla/5.0
-#EXTINF:-1 group-title="FOOTBALL",TRUE BEINSPORTS 2
-https://www.livedoomovies.com:4432/02_epl2_720p/chunklist.m3u8|user-agent=Mozilla/5.0
-#EXTINF:-1 group-title="FOOTBALL",TRUE PREMIERE FOOTBALL 1
-https://www.livedoomovies.com:4432/02_PremierHD1_720p/chunklist.m3u8|user-agent=Mozilla/5.0
-#EXTINF:-1 group-title="FOOTBALL",TRUE PREMIERE FOOTBALL 2
-https://www.livedoomovies.com:4432/02_PremierHD2_720p/chunklist.m3u8|user-agent=Mozilla/5.0
-#EXTINF:-1 group-title="FOOTBALL",TRUE PREMIERE FOOTBALL 3
-https://www.livedoomovies.com:4432/02_PremierHD3_720p/chunklist.m3u8|user-agent=Mozilla/5.0
-#EXTINF:-1 group-title="FOOTBALL",TRUE PREMIERE FOOTBALL 4
-https://www.livedoomovies.com:4432/02_PremierHD4_720p/chunklist.m3u8|user-agent=Mozilla/5.0
-#EXTINF:-1 group-title="FOOTBALL",TRUE PREMIERE FOOTBALL 5
-https://www.livedoomovies.com:4432/02_PremierHD5_720p/chunklist.m3u8|user-agent=Mozilla/5.0
-
-#EXTINF:-1 group-title="RACE & MOTORSPORT",--- RACE & MOTORSPORT ---
-https://separator.channel.available/offline.m3u8
-#EXTINF:-1 group-title="RACE & MOTORSPORT",DAZN F1
-http://medotv.nl:8000/RAMBOfoundedoninternetsoIchangedTheFuckinguSERNAMelol123/5caU9cN5jFjZ/115840
-#EXTINF:-1 group-title="RACE & MOTORSPORT",DUBAI RACING
-https://dmisdracta.cdn.mgmlcdn.com/events/smil:events.stream.smil/index.m3u8|User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148
-#EXTINF:-1 group-title="RACE & MOTORSPORT",DUBAI RACING 2
-https://dmithrvllta.cdn.mgmlcdn.com/dubairacing/smil:dubairacing.smil/index.m3u8|User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148
-#EXTINF:-1 group-title="RACE & MOTORSPORT",HORSE RACING
-http://tv.8dott.xyz:80/live/samuel/samuel123456/94058.ts
-#EXTINF:-1 group-title="RACE & MOTORSPORT",HORSE TV
-https://a-cdn.klowdtv.com/live2/horsetv_720p/playlist.m3u8
-#EXTINF:-1 group-title="RACE & MOTORSPORT",MOTOR RACING TV
-https://dai.google.com/linear/hls/event/qI1pC-R_Sma0bVLVjaEOtw/master.m3u8
-#EXTINF:-1 group-title="RACE & MOTORSPORT",REDBULL TV
-https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_3360.m3u8
-#EXTINF:-1 group-title="RACE & MOTORSPORT",SKY SPORT F1 ᴴᴰ
-http://line.extraott-iptv.com:88/2755789541/1300714776/153701
-
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",--- SPORTS GLOBAL & UMUM ---
-https://separator.channel.available/offline.m3u8
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",Abu Dhabi Sports TV 2
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",Abu Dhabi Sports TV 2
 https://vo-live-media.cdb.cdn.orange.com/Content/Channel/AbuDhabiSportsChannel2/HLS/index.m3u8
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",ARENA PREMIUM 1
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",AFC LEAGUE TWO⁽ˢᵉʳᵛᵉʳ ¹⁾
+http://103.172.71.153:9981/stream/channelid/353195065?profile=pass
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",ARENA PREMIUM 1
 http://zqwkakq.sakuravpn.xyz:900/live/0419634994/4884966970/401436882.m3u8
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",ARENA PREMIUM 2
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",ARENA PREMIUM 2
 http://sltv2.be:8080/DeNiSoNkEl/nPcCsz5hHn/438732
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",ASTRO GOLF
-https://smart.946985.filegear-sg.me/smart.php?id=Agolf
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",Bahrain Sports 1
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",ASTRO FOOTBALL ᴴᴰ
+https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/AstFut.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",ASTRO PREMIER LEAGUE 1 ᴴᴰ
+http://tv.8dott.xyz:80/live/samuel/samuel123456/709263.ts
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",Bahrain Sports 1
 https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",Bahrain Sports 2
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",Bahrain Sports 2
 https://5c7b683162943.streamlock.net/live/ngrp:bahrainsportstwo_all/playlist.m3u8
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",BILLIYARD TV
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",BARCA TV ᴴᴰ
+https://amg17560-fcb-amg17560c1-rakuten-uk-4891.playouts.now.amagi.tv/playlist/amg17560-fcbarcelona-topbarcaenglish-rakutenuk/playlist.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",BEIN SPORTS 4
+http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142758
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",BEIN SPORTS 5
+http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142759
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",BEIN SPORTS 6
+http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",BEIN SPORTS 7
+http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142761
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",BEIN SPORTS 8
+http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142752
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",BEIN SPORTS EXTRA
+https://amg01334-beinsportsllc-beinxtra-localnow-kcy6r.amagi.tv/playlist.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",BELLATOR MMA
+http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5ebc8688f3697d00072f7cf8/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT={TARGETOPT}&deviceId={PSID}&advertisingId={PSID}&us_privacy=1YNY&samsung_app_domain={APP_DOMAIN}&samsung_app_name={APP_NAME}&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",BILLIYARD TV
 https://newidco-billiardstv-1-eu.xiaomi.wurl.tv/playlist.m3u8
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",DAZN 1-DT1
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",BOXING TV
+https://stitcher.pluto.tv/stitch/hls/channel/64df7ab4dfa32400083c517blivestitch/master.m3u8?deviceType=web&servertSideAds=false&deviceMake=safari&deviceVersion=1&deviceId=spencer&appVersion=1&deviceDNT=0&deviceModel=web&sid=f9f2b24b-6a97-11ef-9ed7-d66fb14cb385&profilesFromStream=true
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",BRI SUPER LEAGUE⁽ˢᵉʳᵛᵉʳ ²⁾
+https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/BRISuper2.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",DAZN 1-DT1
 http://213.176.3.65:8080/live/COOPERath/w3EBgdaXF0/111261.ts
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",DAZN 3
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",DAZN 3
 http://1tv41.icu:8080/live/43761449506/smallwood/167748.ts
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",DAZN 4
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",DAZN 4
 http://supersonictv.live:8080/006779/439866/7632
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",DAZN 5
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",DAZN 5
 http://supersonictv.live:8080/006779/439866/7634
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",DAZN RISE
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",DAZN F1
+http://medotv.nl:8000/RAMBOfoundedoninternetsoIchangedTheFuckinguSERNAMelol123/5caU9cN5jFjZ/115840
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",DAZN LALIGA
+http://tv.8dott.xyz:80/live/samuel/samuel123456/837876.ts
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",DAZN RISE
 http://exm3u.extraott.com:80/live/ZUL96376/UG4VTW4E/82238.m3u8
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",ESPN
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",DUBAI RACING
+https://dmisdracta.cdn.mgmlcdn.com/events/smil:events.stream.smil/index.m3u8|User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",DUBAI RACING 2
+https://dmithrvllta.cdn.mgmlcdn.com/dubairacing/smil:dubairacing.smil/index.m3u8|User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",ESPN
 http://medotv.nl:8000/RAMBOfoundedoninternetsoIchangedTheFuckinguSERNAMelol123/5caU9cN5jFjZ/14920
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",ESPN 🇨🇴
-https://covoslivechannels2dash.clarovideo.com/Content/DASH_DASH_FK/Live/Channel(ESPN_HD)/manifest.mpd?|referer=https://covoslivechannels2dash.clarovideo.com/
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",ESPN 2
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",ESPN 2
 http://supersonictv.live:8080/006779/439866/22199
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",ESPN 2 🇨🇴
-https://covoslivechannels2dash.clarovideo.com/Content/DASH_DASH_FK/Live/Channel(ESPN_2_HD)/manifest.mpd?|referer=https://covoslivechannels2dash.clarovideo.com/
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",ESPN 3
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",ESPN 3
 http://46.151.196.223:14444/
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",ESPN 3 🇨🇴
-https://covoslivechannels2dash.clarovideo.com/Content/DASH_DASH_FK/Live/Channel(ESPN_3_HD)/manifest.mpd?|referer=https://covoslivechannels2dash.clarovideo.com/
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",ESPN 4 🇨🇴
-https://covoslivechannels2dash.clarovideo.com/Content/DASH_DASH_FK/Live/Channel(ESPN_PLUS_HD)/manifest.mpd?|referer=https://covoslivechannels2dash.clarovideo.com/
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",ESPN 5
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",ESPN 5
 http://sinalprivado.info:80/live/632035/GqGcFV4ntu/22014.ts
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",ESPN 6
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",ESPN 6
 http://sinalprivado.info:80/live/632035/GqGcFV4ntu/22016.ts
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",ESPN NETWORK
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",ESPN NETWORK
 http://supersonictv.live:8080/006779/439866/22208
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",ESPN U
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",ESPN U
 https://fl31.moveonjoy.com/ESPN_U/tracks-v1a1/mono.ts.m3u8
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",ESPN VIVO
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",ESPN VIVO
 http://sinalprivado.info:80/live/632035/GqGcFV4ntu/22002.ts
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",ESPN VIVO 2
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",ESPN VIVO 2
 http://sinalprivado.info:80/live/632035/GqGcFV4ntu/22005.ts
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",EUROSPORT -1
-http://vod.splay.uz/live_splay/original/Eurosport/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",eurosport2 HD
-http://185.188.188.237:5000/live/eurosport2/playlist.m3u8
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",FUBO SPORTS 1
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",FIFA+ SPORT
+https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",FIGHT SPORTS
+https://d2tjypxxy769fn.cloudfront.net/out/v1/73b7057c72da4615888a11b02a6cbb3c/index.mpd
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",FUBO SPORTS 1
 http://23.227.140.75:8880/live/ElizJohn614/fdtXMLpTA9/418199.ts
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",Golf Network (Primehome)
-https://proxyvn.utako.moe/ph.php?&isp=1&id=cs03
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",GOLF+
-https://cdnjkt913.transvision.co.id:1000/live/master/3/4028c68571b3914b01720e7ff4376d21/manifest.mpd
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",JUST FISHING
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/61b33085897b9d000702b72e/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=1b1e2704-4b81-11ef-a8ac-e146e4e7be02&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=40e61b35-9683-4394-86ae-756247e07690
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",OMAN SPORT
-https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",PGA TOUR
-http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5de94dacb394a300099fa22a/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT={TARGETOPT}&deviceId={PSID}&advertisingId={PSID}&us_privacy=1YNY&samsung_app_domain={APP_DOMAIN}&samsung_app_name={APP_NAME}&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",PRIMA SPORT 1
-https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/prim1.m3u8
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",SETANTA SPORT
-http://tv.8dott.xyz:80/live/samuel/samuel123456/428868.ts
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",SHARJAH SPORT
-https://svs.itworkscdn.net/smc4sportslive/smc4.smil/playlist.m3u8?checkedby:hlscat.com
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",SKY SPORTS GOLF ᴴᴰ
-http://tv.8dott.xyz:80/live/samuel/samuel123456/164498.ts
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",SPOTV -1
-https://d3b0v7fggu5zwm.cloudfront.net/out/v1/b4814ae93ca84dd3bb5b0aff76ca263f/index.mpd
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",SPOTV (TVOD)
-http://202.80.222.20/cdn/iptv/Tvod/001/channel2000160/1024.m3u8
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",SPOTV 2 (TVOD)
-http://202.80.222.20/cdn/iptv/Tvod/001/channel2000138/1024.m3u8
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",STAR SPORTS 2 ᴴᴰ
-http://iptvtree.net:8080/F28312/cc1dc138/16619
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",STAR SPORTS SELECT 1 ᴴᴰ
-http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/33356
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",SUPER SPORT 1
-https://wahyu1ptv.pages.dev/SuperSport1-HD.m3u8
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",SUPER SPORT 2
-https://wahyu1ptv.pages.dev/SuperSport2-HD.m3u8
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",SUPER SPORT 3
-https://wahyu1ptv.pages.dev/SuperSport3-HD.m3u8
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",TENNIS CHANNEL 1
-https://tennischannel-int-samsunguk.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",TENNIS CHANNEL 2
-http://49.0.64.96:8007/TENNIS
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",TVRI Sport
-https://ott-balancer.tvri.go.id/live/eds/SportHD/hls/SportHD.m3u8
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",TVRI SPORT
-https://op-group1-swiftservesd-1.dens.tv/s/s107/index.m3u8?app_type=web&userid=lite&chname=TVRI_Sport
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",TVRI WORLD
-https://ott-balancer.tvri.go.id/live/eds/TVRIWorld/hls/TVRIWorld.m3u8
-#EXTINF:-1 group-title="SPORTS GLOBAL & UMUM",VOOSPORT ᴴᴰ
-http://tv.8dott.xyz:80/live/samuel/samuel123456/845579.ts
-
-#EXTINF:-1 group-title="WWE",--- WWE ---
-https://separator.channel.available/offline.m3u8
-#EXTINF:-1 group-title="WWE",IMPACT! WRESTLING
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",GLORY KICKBOXING
+http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5417a212ff9fba68282fbf5e/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT={TARGETOPT}&deviceId={PSID}&advertisingId={PSID}&us_privacy=1YNY&samsung_app_domain={APP_DOMAIN}&samsung_app_name={APP_NAME}&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",HORSE RACING
+http://tv.8dott.xyz:80/live/samuel/samuel123456/94058.ts
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",HORSE TV
+https://a-cdn.klowdtv.com/live2/horsetv_720p/playlist.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",IMPACT! WRESTLING
 https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/59b722526996084038c01e1b/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel
-#EXTINF:-1 group-title="WWE",WWE ᴴᴰ
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",INDOSIAR BRI LIGA 1
+https://warningfm.github.io/v3/live/str/id/575eeb9f08dc8db.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",INTER TV ᴴᴰ
+https://ilglobotv-live.akamaized.net/channels/InterTV/Live.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",JUST FISHING
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/61b33085897b9d000702b72e/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=1b1e2704-4b81-11ef-a8ac-e146e4e7be02&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=40e61b35-9683-4394-86ae-756247e07690
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",MILAN TV ᴴᴰ
+http://medotv.nl:8000/RAMBOfoundedoninternetsoIchangedTheFuckinguSERNAMelol123/5caU9cN5jFjZ/127757
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",MOJI Proliga Volley
+http://iptvtree.net:8080/test_acct/ohbo1veifa4AhD/298550
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",MOTOR RACING TV
+https://dai.google.com/linear/hls/event/qI1pC-R_Sma0bVLVjaEOtw/master.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",MUTV ᴴᴰ
+http://tvmate.icu:8080/69NpyV/884735/53717
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",OMAN SPORT
+https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",PEGADAIAN CHAMPIONSHIP⁽ˢᵉʳᵛᵉʳ ¹⁾
+http://iptvtree.net:8080/live/F28312/cc1dc138/162138.ts
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",PEGADAIAN CHAMPIONSHIP⁽ˢᵉʳᵛᵉʳ ³⁾
+https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/BRISuper1.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",PGA TOUR
+http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5de94dacb394a300099fa22a/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT={TARGETOPT}&deviceId={PSID}&advertisingId={PSID}&us_privacy=1YNY&samsung_app_domain={APP_DOMAIN}&samsung_app_name={APP_NAME}&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",PRIMA SPORT 1
+https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/prim1.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",REDBULL TV
+https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_3360.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",SETANTA SPORT
+http://tv.8dott.xyz:80/live/samuel/samuel123456/428868.ts
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",SHARJAH SPORT
+https://svs.itworkscdn.net/smc4sportslive/smc4.smil/playlist.m3u8?checkedby:hlscat.com
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",SKY SPORT F1 ᴴᴰ
+http://line.extraott-iptv.com:88/2755789541/1300714776/153701
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",SKY SPORTS FOOTBALL
+http://tv.8dott.xyz:80/live/samuel/samuel123456/35798.ts
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",SKY SPORTS GOLF ᴴᴰ
+http://tv.8dott.xyz:80/live/samuel/samuel123456/164498.ts
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",Soccer Channel-HD
+https://d2xz2v5wuvgur6.cloudfront.net/out/v1/63c0da12bb4d48afbaf053f51dff2353/index.mpd
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",STAR SPORTS 2 ᴴᴰ
+http://iptvtree.net:8080/F28312/cc1dc138/16619
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",STAR SPORTS SELECT 1 ᴴᴰ
+http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/33356
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",SUPER SPORT 1
+https://wahyu1ptv.pages.dev/SuperSport1-HD.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",SUPER SPORT 2
+https://wahyu1ptv.pages.dev/SuperSport2-HD.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",SUPER SPORT 3
+https://wahyu1ptv.pages.dev/SuperSport3-HD.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",TENNIS CHANNEL 1
+https://tennischannel-int-samsunguk.amagi.tv/playlist.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",TENNIS CHANNEL 2
+http://49.0.64.96:8007/TENNIS
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",TNT Sports 1
+http://line.extraott-iptv.com:88/2755789541/1300714776/13780
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",TNT Sports 2
+http://line.extraott-iptv.com:88/2755789541/1300714776/13779
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",TNT Sports 3
+http://line.extraott-iptv.com:88/2755789541/1300714776/13778
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",TNT Sports 4
+http://line.extraott-iptv.com:88/2755789541/1300714776/153713
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",TRUE BEINSPORTS 1
+https://www.livedoomovies.com:4432/02_epl1_720p/chunklist.m3u8|user-agent=Mozilla/5.0
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",TRUE BEINSPORTS 2
+https://www.livedoomovies.com:4432/02_epl2_720p/chunklist.m3u8|user-agent=Mozilla/5.0
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",TRUE PREMIERE FOOTBALL 1
+https://www.livedoomovies.com:4432/02_PremierHD1_720p/chunklist.m3u8|user-agent=Mozilla/5.0
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",TRUE PREMIERE FOOTBALL 2
+https://www.livedoomovies.com:4432/02_PremierHD2_720p/chunklist.m3u8|user-agent=Mozilla/5.0
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",TRUE PREMIERE FOOTBALL 3
+https://www.livedoomovies.com:4432/02_PremierHD3_720p/chunklist.m3u8|user-agent=Mozilla/5.0
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",TRUE PREMIERE FOOTBALL 4
+https://www.livedoomovies.com:4432/02_PremierHD4_720p/chunklist.m3u8|user-agent=Mozilla/5.0
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",TRUE PREMIERE FOOTBALL 5
+https://www.livedoomovies.com:4432/02_PremierHD5_720p/chunklist.m3u8|user-agent=Mozilla/5.0
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",TVRI Sport
+https://ott-balancer.tvri.go.id/live/eds/SportHD/hls/SportHD.m3u8
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",VOOSPORT ᴴᴰ
+http://tv.8dott.xyz:80/live/samuel/samuel123456/845579.ts
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",WWE ᴴᴰ
 http://line.lemotv.cc:80/Ivica5274/juric4005/2903216
+#EXTINF:-1 group-title="🌟 SPORTS GLOBAL & UMUM",XTREM SPORTS
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e0b81a5c-6ab5-48cd-aaa9-f82de4ab5bf9/manifest.m3u8
