@@ -26,7 +26,7 @@ jobs:
         run: |
           git config user.name "GitHub Bot"
           git config user.email "bot@github"
-          # Tambahkan file yang dihasilkan dan file map ke staging
+          # Pastikan semua file baru di-commit
           git add live-auto.m3u
           git add live-auto-stats.json
           git add channel-map.json
