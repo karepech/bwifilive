@@ -3,17 +3,18 @@ import fetch from "node-fetch";
 import axios from "axios";
 
 /*
-  generate-live.js (FINAL FIX: Enhanced Error Handling, H+1, and TVG-LOGO Extraction)
-  - Channels with live football matches move to ⚽ LIVE FOOTBALL [Tanggal] (H+0, H+1).
-  - All other channels (non-football, non-live football) fall into 🌟 SPORTS GLOBAL & UMUM.
-  - Global duplicate naming is applied.
-  - NEW: Extracts tvg-logo attribute and includes it in the final M3U output.
+  generate-live.js (FINAL FIX: Ensures all channels (live and static) are printed)
+  - FIXES channel loss issue by guaranteeing assignment to the FALLBACK_GROUP.
 */
 
 const SOURCE_M3US = [
   
   "https://bakulwifi.my.id/live.m3u",
- 
+  "https://donzcompany.shop/donztelevision/donztelevision.php",
+  "https://beww.pl/fifa.m3u",
+  "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
+  "https://pastebin.com/raw/faZ6xjCu",
+  "http://bit.ly/kopinyaoke" 
 ];
 
 // =======================================================
@@ -59,7 +60,7 @@ function extractChannelsFromM3U(m3u) {
       const nameMatch = l.match(/,(.*)$/);
       const namePart = nameMatch ? nameMatch[1].trim() : l;
       
-      // NEW: Extract TVG-LOGO
+      // Extract TVG-LOGO
       const logoMatch = l.match(/tvg-logo="([^"]*)"/);
       const logoUrl = logoMatch ? logoMatch[1] : '';
 
@@ -228,6 +229,7 @@ async function main() {
             groupTitle = eventMatchInfo.dateGroup; // Ganti grup ke tanggal dinamis (H+1)
             isLive = eventMatchInfo.isLive;
         } 
+        // Jika saluran Football tidak live, groupTitle tetap FALLBACK_GROUP
     } 
     
     matchedCount++;
@@ -238,7 +240,7 @@ async function main() {
         groupTitle: groupTitle, 
         originalCategory: staticCategory, 
         isLive: isLive,
-        logo: ch.logo // Simpan logo
+        logo: ch.logo // Sertakan logo
     });
   }
 
@@ -325,7 +327,7 @@ async function main() {
               // Tulis saluran yang cocok
               channelsInGroup.sort((a, b) => a.name.localeCompare(b.name));
               for (const ch of channelsInGroup) {
-                  // NEW: Tambahkan atribut tvg-logo
+                  // Tambahkan atribut tvg-logo
                   const logoAttr = ch.logo ? ` tvg-logo=\"${ch.logo}\"` : '';
                   const newExtinf = `#EXTINF:-1 group-title=\"${groupTitle}\"${logoAttr},${ch.name}`;
                   output.push(newExtinf); 
