@@ -10,6 +10,14 @@ import axios from "axios";
 const SOURCE_M3US = [
   
   "https://bakulwifi.my.id/live.m3u"
+  "https://donzcompany.shop/donztelevision/donztelevision.php",
+  "https://beww.pl/fifa.m3u",
+  "https://drive.usercontent.google.com/download?id=1Y6hVE3z0PHLYniieDnUtvnUEuIg2b8oy&export=download&authuser=0",
+  "https://ktvok.blogspot.com/2025/10/fhshf12369sadigis62891.html",
+  "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
+  "https://pltvgelis.blogspot.com/2025/03/migrasi-geulis-tv.html",
+  "https://pastebin.com/raw/faZ6xjCu"
+  "http://bit.ly/kopinyaoke"
   // Tambahkan URL live untuk nyolong.m3u di sini jika sudah ada
 ];
 
