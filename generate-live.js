@@ -3,12 +3,11 @@ import fetch from "node-fetch";
 import axios from "axios";
 
 /*
-  generate-live.js (FINAL: H+1 Dynamic Grouping & Single Static Group with FORCE HEADER)
+  generate-live.js (FINAL: H+1 Dynamic Grouping & Single Static Group)
   - Fetches soccer events (H+0 to H+1) for dynamic grouping.
   - Channels with live football matches move to ⚽ LIVE FOOTBALL [Tanggal].
   - All other channels (non-football, non-live football) fall into 🌟 SPORTS GLOBAL & UMUM.
   - Global duplicate naming is applied.
-  - FIX: Ensures H+0 and H+1 headers appear even if empty.
 */
 
 const SOURCE_M3US = [
@@ -217,7 +216,7 @@ async function main() {
         // Jika saluran Football tidak live, ia akan tetap di groupTitle = FALLBACK_GROUP
     } else {
         // Saluran Non-Football (BASKET, WWE, dll) juga masuk ke FALLBACK_GROUP
-        // finalChannelName tetap nama aslinya
+        // finalChannelName tetap nama aslinya.
     }
     
     matchedCount++;
@@ -308,8 +307,9 @@ async function main() {
   for (const groupTitle of sortedGroups) {
       const channelsInGroup = outputMap.get(groupTitle);
       
-      // FORCE HEADER: Tuliskan grup dinamis terlepas dari isinya
       if (groupTitle.startsWith(LIVE_FOOTBALL_PREFIX)) {
+          // --- Grup Dinamis LIVE FOOTBALL ---
+          
           // Tuliskan header grup dinamis
           output.push(`\n#EXTINF:-1 group-title=\"${groupTitle}\",--- ${groupTitle} ---`);
           output.push("https://separator.channel.available/offline.m3u8");
