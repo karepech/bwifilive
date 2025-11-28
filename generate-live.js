@@ -3,9 +3,11 @@ import fetch from "node-fetch";
 import axios from "axios";
 
 /*
-  generate-live.js (FINAL & STABIL: FIXING EISDIR/CHANNEL LOSS)
-  - Removed URLs known to cause EISDIR/HTML parsing failures.
-  - Implements H+1 schedule logic and Global Duplication.
+  generate-live.js (FINAL FIX: Enhanced Error Handling, H+1, and TVG-LOGO Extraction)
+  - Channels with live football matches move to ⚽ LIVE FOOTBALL [Tanggal] (H+0, H+1).
+  - All other channels (non-football, non-live football) fall into 🌟 SPORTS GLOBAL & UMUM.
+  - Global duplicate naming is applied.
+  - NEW: Extracts tvg-logo attribute and includes it in the final M3U output.
 */
 
 const SOURCE_M3US = [
@@ -37,7 +39,7 @@ async function fetchText(url) {
     // Safety Check: Hanya lanjutkan jika response type tampak seperti file mentah/teks
     const contentType = res.headers.get('content-type') || '';
     if (contentType.includes('text/html') || contentType.includes('application/json')) {
-        console.log(`Fetch Warning: URL returned HTML/JSON type for ${url}. Skipping to prevent parsing errors.`);
+        console.log(`Fetch Warning: URL returned HTML/JSON type for ${url}. Skipping.`);
         return "";
     }
 
@@ -56,10 +58,14 @@ function extractChannelsFromM3U(m3u) {
     if (l.startsWith("#EXTINF")) {
       const nameMatch = l.match(/,(.*)$/);
       const namePart = nameMatch ? nameMatch[1].trim() : l;
+      
+      // NEW: Extract TVG-LOGO
+      const logoMatch = l.match(/tvg-logo="([^"]*)"/);
+      const logoUrl = logoMatch ? logoMatch[1] : '';
 
       const url = (lines[i + 1] || "").trim();
       if (url.startsWith("http")) {
-        channels.push({ extinf: l, name: namePart, url });
+        channels.push({ extinf: l, name: namePart, url, logo: logoUrl });
       }
     }
   }
@@ -211,7 +217,7 @@ async function main() {
     
     let finalChannelName = ch.name;
     let isLive = false;
-    let groupTitle = FALLBACK_GROUP; // Default: Semua masuk ke Global & Umum
+    let groupTitle = FALLBACK_GROUP; 
     
     // Cek apakah saluran ini adalah saluran Bola
     if (staticCategory === "FOOTBALL") { 
@@ -222,7 +228,6 @@ async function main() {
             groupTitle = eventMatchInfo.dateGroup; // Ganti grup ke tanggal dinamis (H+1)
             isLive = eventMatchInfo.isLive;
         } 
-        // Jika saluran Football tidak live, groupTitle tetap FALLBACK_GROUP
     } 
     
     matchedCount++;
@@ -230,9 +235,10 @@ async function main() {
     processedChannels.push({
         name: finalChannelName,
         url: ch.url,
-        groupTitle: groupTitle, // Bisa dinamis (Tanggal) atau statis (FALLBACK)
+        groupTitle: groupTitle, 
         originalCategory: staticCategory, 
-        isLive: isLive
+        isLive: isLive,
+        logo: ch.logo // Simpan logo
     });
   }
 
@@ -286,7 +292,7 @@ async function main() {
   }
   
   // =========================================================================
-  // TAHAP 3: TULIS OUTPUT AKHIR (Dengan Force Header)
+  // TAHAP 3: TULIS OUTPUT AKHIR (Dengan Logo dan Force Header)
   // =========================================================================
   
   output.push("#EXTM3U");
@@ -319,7 +325,9 @@ async function main() {
               // Tulis saluran yang cocok
               channelsInGroup.sort((a, b) => a.name.localeCompare(b.name));
               for (const ch of channelsInGroup) {
-                  const newExtinf = `#EXTINF:-1 group-title=\"${groupTitle}\",${ch.name}`;
+                  // NEW: Tambahkan atribut tvg-logo
+                  const logoAttr = ch.logo ? ` tvg-logo=\"${ch.logo}\"` : '';
+                  const newExtinf = `#EXTINF:-1 group-title=\"${groupTitle}\"${logoAttr},${ch.name}`;
                   output.push(newExtinf); 
                   output.push(ch.url);
               }
