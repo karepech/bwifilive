@@ -14,9 +14,9 @@ import axios from "axios";
 */
 
 const SOURCE_M3US = [
-  "https://bakulwifi.my.id/live.m3u",
+  "https://getch.semar.my.id/",
   "https://bakulwifi.my.id/bw.m3u",
-  "https://getch.semar.my.id"
+  "https://bakulwifi.my.id/live.m3u"
 ];
 
 function todaysDate() {
