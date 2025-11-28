@@ -3,11 +3,10 @@ import fetch from "node-fetch";
 import axios from "axios";
 
 /*
-  generate-live.js (FINALIZED: DYNAMIC FOOTBALL + ALL STATIC CATEGORIES)
-  - Fetches soccer events for TODAY, H+1, and H+2 from TheSportsDB.
+  generate-live.js (FINALIZED: OFFLINE INCLUDED & H+3 SCHEDULE)
+  - Fetches soccer events for TODAY, H+1, H+2, and H+3 from TheSportsDB.
   - Channels with upcoming events are moved to date groups (⚽ LIVE FOOTBALL YYYY-MM-DD).
-  - Channels without upcoming events (non-live) remain in their static league group (LIGA INGGRIS (EPL)).
-  - All non-football channels remain in their static group (TENNIS & GOLF, etc.).
+  - All channels (offline/online) are included in the final M3U.
 */
 
 const SOURCE_M3US = [
@@ -29,6 +28,7 @@ function getDateString(daysOffset) {
   return `${yyyy}-${mm}-${dd}`;
 }
 
+// Fungsi headOk sekarang tidak digunakan, tetapi kita biarkan untuk referensi
 async function fetchText(url) {
   try {
     const res = await fetch(url, { timeout: 15000 });
@@ -37,15 +37,6 @@ async function fetchText(url) {
   } catch (e) {
     console.log("fetchText error for", url, e.message);
     return "";
-  }
-}
-
-async function headOk(url) {
-  try {
-    const res = await axios.head(url, { timeout: 7000 });
-    return res.status === 200;
-  } catch {
-    return false;
   }
 }
 
@@ -75,10 +66,12 @@ function loadChannelMap() {
   }
 }
 
+// Mengambil Jadwal Sepak Bola 4 Hari ke Depan (H+0 hingga H+3)
 async function fetchUpcomingEvents() {
     let allEvents = [];
     
-    for (let offset = 0; offset <= 2; offset++) {
+    // LOOP HINGGA H+3 (offset <= 3)
+    for (let offset = 0; offset <= 3; offset++) {
         const date = getDateString(offset);
         const url = `https://www.thesportsdb.com/api/v1/json/3/eventsday.php?d=${date}&s=Soccer`;
         const txt = await fetchText(url);
@@ -97,7 +90,7 @@ async function fetchUpcomingEvents() {
             }));
             allEvents = allEvents.concat(events);
         } catch (e) {
-            // Error parsing diabaikan karena API tidak selalu mengembalikan data
+            // Error parsing diabaikan
         }
     }
     return allEvents;
@@ -126,14 +119,13 @@ function getStaticCategory(channel, channelMap) {
   return null;
 }
 
-// Fungsi ini MENGEMBALIKAN NULL jika saluran BOLA TIDAK cocok dengan jadwal H+2
+// Mencari Informasi Acara Live/Upcoming Sepak Bola yang Sesuai (H+3)
 function getEventMatchInfo(channel, events, staticCategory) {
     const ln = channel.name.toLowerCase();
     const lu = channel.url.toLowerCase();
     let bestMatch = null;
     let bestOffset = Infinity; 
     
-    // Hanya proses jika saluran ini cocok dengan kategori Bola
     if (!staticCategory || (!staticCategory.includes("LIGA") && !staticCategory.includes("FOOTBALL"))) {
         return null;
     }
@@ -162,13 +154,12 @@ function getEventMatchInfo(channel, events, staticCategory) {
         return { groupTitle: groupTitle, channelName: finalChannelName };
     }
     
-    // Jika tidak ada event H+2 yang cocok, kembalikan null
     return null;
 }
 
 
 async function main() {
-  console.log("Starting generate-live.js (FINAL)...");
+  console.log("Starting generate-live.js (NO OFFLINE CHECK, H+3)...");
 
   const channelMap = loadChannelMap();
   const events = await fetchUpcomingEvents(); 
@@ -190,7 +181,7 @@ async function main() {
   });
 
   let matchedCount = 0;
-  let onlineCount = 0;
+  // onlineCount dihilangkan
 
   const output = ["#EXTM3U"];
 
@@ -198,7 +189,9 @@ async function main() {
   // Inisialisasi Group Map dan Header Wajib (Football)
   // =========================================================================
   const categorizedChannels = new Map();
-  const dateGroups = [getDateString(0), getDateString(1), getDateString(2)];
+  
+  // RENTANG H+0 HINGGA H+3
+  const dateGroups = [getDateString(0), getDateString(1), getDateString(2), getDateString(3)]; 
 
   // 1. Inisialisasi grup dinamis untuk Football (akan diisi dengan saluran yang cocok)
   dateGroups.forEach(date => {
@@ -211,7 +204,7 @@ async function main() {
   }
 
   // =========================================================================
-  // PROSES SALURAN
+  // PROSES SALURAN (TANPA CEK ONLINE)
   // =========================================================================
   for (const ch of unique) {
     
@@ -223,30 +216,22 @@ async function main() {
     let finalChannelName = ch.name;
     let isFootball = staticCategory.includes("LIGA") || staticCategory.includes("FOOTBALL");
 
-    // Cek apakah saluran BOLA ini LIVE/UPCOMING H+2
+    // Cek apakah saluran BOLA ini LIVE/UPCOMING H+3
     if (isFootball) {
         const eventMatch = getEventMatchInfo(ch, events, staticCategory);
         if (eventMatch) {
             // Jika LIVE/UPCOMING, pindah ke grup tanggal dinamis
             groupTitle = eventMatch.groupTitle; 
             finalChannelName = eventMatch.channelName;
-        } else {
-            // Jika TIDAK LIVE/UPCOMING, biarkan di groupTitle = staticCategory
-            // Inilah yang memastikan semua saluran liga tetap tampil!
-        }
+        } 
+        // Jika tidak, biarkan groupTitle = staticCategory
     }
     
     matchedCount++;
-
-    const ok = await headOk(ch.url);
-    if (!ok) {
-      // console.log("SKIP (offline):", ch.name);
-      continue;
-    }
-
-    onlineCount++;
+    // Cek headOk Dihapus
+    // onlineCount Dihapus
     
-    // Tambahkan saluran ke Map (baik itu grup tanggal dinamis atau grup statis liga/lainnya)
+    // Tambahkan saluran ke Map
     if (categorizedChannels.has(groupTitle)) {
         categorizedChannels.get(groupTitle).push({
             name: finalChannelName,
@@ -254,7 +239,6 @@ async function main() {
             originalCategory: staticCategory
         });
     } else {
-         // Fallback jika ada kategori baru yang tidak terinisialisasi
          categorizedChannels.set(groupTitle, [{ name: finalChannelName, url: ch.url, originalCategory: staticCategory }]);
     }
   }
@@ -287,19 +271,16 @@ async function main() {
                output.push(`\n#EXTINF:-1 group-title="${groupTitle}",[NO MATCHES FOUND FOR THIS DATE]`);
                output.push("https://no.channel.available.today/offline.m3u8");
           } else {
-              // Tulis grup LIVE FOOTBALL dengan saluran yang dipindahkan
+              // Tulis grup LIVE FOOTBALL
               channelsInGroup.sort((a, b) => a.originalCategory.localeCompare(b.originalCategory));
               for (const ch of channelsInGroup) {
-                  const newExtinf = `#EXTINF:-1 group-title="${groupTitle}",${ch.name}`;
+                  const newExtinf = `#EXTINF:-1 group-title="${groupTitle}",${ch.name} [LIVE/UPCOMING]`; // Tambahkan tag [LIVE/UPCOMING]
                   output.push(newExtinf); 
                   output.push(ch.url);
               }
           }
       } else if (channelsInGroup.length > 0) {
           // --- Grup Statis (LIGA dan NON-BOLA) ---
-          // Tulis grup Statis (termasuk Liga yang sedang kosong karena salurannya pindah ke grup tanggal)
-          
-          // Urutkan saluran di dalam grup statis secara alfabetis
           channelsInGroup.sort((a, b) => a.name.localeCompare(b.name));
           for (const ch of channelsInGroup) {
               const newExtinf = `#EXTINF:-1 group-title="${groupTitle}",${ch.name}`;
@@ -315,16 +296,16 @@ async function main() {
     fetched: allChannels.length,
     unique: unique.length,
     matched: matchedCount,
-    online: onlineCount,
+    // online field dihilangkan
     generatedAt: new Date().toISOString()
   };
 
   fs.writeFileSync("live-auto-stats.json", JSON.stringify(stats, null, 2));
 
   console.log("=== SUMMARY ===");
-  console.log("Matched (channels):", matchedCount);
-  console.log("Online (HTTP 200):", onlineCount);
-  console.log("Generated live-auto.m3u with", onlineCount, "channels");
+  console.log("Total unique channels:", unique.length);
+  console.log("Matched (categories/schedule):", matchedCount);
+  console.log("Generated live-auto.m3u with", matchedCount, "channels (including offline)");
   console.log("Stats saved to live-auto-stats.json");
 }
 
