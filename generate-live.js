@@ -11,7 +11,8 @@ import axios from "axios";
 
 const SOURCE_M3US = [
   
-  "https://bakulwifi.my.id/live.m3u"
+  "https://bakulwifi.my.id/live.m3u",
+  "https://bakulwifi.my.id/nyolong.m3u"
 
 ];
 
