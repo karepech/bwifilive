@@ -21,7 +21,7 @@ const SOURCE_M3US = [
 
 function todaysDate() {
   const d = new Date();
-  const yyyy = d.getFullYear();
+  const yyyy = String(d.getFullYear());
   const mm = String(d.getMonth() + 1).padStart(2, "0");
   const dd = String(d.getDate()).padStart(2, "0");
   return `${yyyy}-${mm}-${dd}`;
@@ -76,6 +76,8 @@ function loadChannelMap() {
 }
 
 async function fetchTodayEvents() {
+  // Anda dapat mengganti ini dengan API-Sports.io jika sudah berlangganan dan menyiapkan kuncinya.
+  // Untuk saat ini, kita tetap menggunakan TheSportsDB.
   const date = todaysDate();
   const url = `https://www.thesportsdb.com/api/v1/json/3/eventsday.php?d=${date}&s=Soccer`;
   const txt = await fetchText(url);
@@ -98,7 +100,7 @@ function buildEventKeywords(events) {
   return Array.from(kw);
 }
 
-// FUNGSI INTI UNTUK MENDAPATKAN KATEGORI
+// FUNGSI INTI UNTUK MENDAPATKAN KATEGORI (MODIFIKASI UTAMA DI SINI)
 function channelMatchesKeywords(channel, keywords, channelMap) {
   const ln = channel.name.toLowerCase();
   const lu = channel.url.toLowerCase();
@@ -106,18 +108,40 @@ function channelMatchesKeywords(channel, keywords, channelMap) {
   // 1. Cek kecocokan dengan JADWAL HARI INI (Tim/Liga)
   for (const k of keywords) {
     if (ln.includes(k) || lu.includes(k)) {
-      // Jika cocok dengan keyword dari TheSportsDB, gunakan kategori FOOTBALL LIVE
       return "FOOTBALL LIVE (Jadwal Harian)";
     }
   }
 
   // 2. Cek kecocokan dengan CHANNEL MAP (Kategori Lain)
   for (const category of Object.keys(channelMap)) {
-    for (const kw of channelMap[category]) {
-      const k = kw.toLowerCase();
-      if (ln.includes(k) || lu.includes(k)) {
-        // Jika cocok dengan channel map, kembalikan nama kategori
-        return category;
+    const categoryContent = channelMap[category];
+    
+    if (Array.isArray(categoryContent)) {
+      // Kasus 1: Kategori standar (seperti MOTORSPORT atau UMUM & MULTISPORT) - nilainya adalah Array
+      for (const kw of categoryContent) {
+        if (typeof kw === 'string') {
+          const k = kw.toLowerCase();
+          if (ln.includes(k) || lu.includes(k)) {
+            return category;
+          }
+        }
+      }
+    } else if (typeof categoryContent === 'object' && categoryContent !== null) {
+      // Kasus 2: Kategori bersarang (seperti FOOTBALL LIVE) - nilainya adalah Objek filter liga
+      for (const subCategory of Object.keys(categoryContent)) {
+        const keywordsArray = categoryContent[subCategory];
+        
+        if (Array.isArray(keywordsArray)) {
+          for (const kw of keywordsArray) {
+            if (typeof kw === 'string') {
+              const k = kw.toLowerCase();
+              // Jika cocok, kita kembalikan KATEGORI UTAMA (misalnya, "FOOTBALL LIVE (Jadwal Harian)")
+              if (ln.includes(k) || lu.includes(k)) {
+                return category; 
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -169,8 +193,36 @@ async function main() {
     // Tangkap nama kategori (bisa string kategori atau null)
     const category = channelMatchesKeywords(ch, keywords, channelMap);
     
-    if (!category) continue; // Skip jika tidak ada kategori yang cocok
+    // Perubahan di sini: Jika category adalah 'FOOTBALL LIVE (Jadwal Harian)',
+    // kita perlu mencari sub-kategori yang sesuai untuk group-title yang lebih spesifik.
 
+    let groupTitle = category; 
+    
+    // Jika tidak ada kategori yang cocok atau bukan kategori utama yang kita modifikasi, lanjutkan.
+    if (!category) continue; 
+    
+    // Jika kategorinya adalah FOOTBALL LIVE, kita cari sub-filternya
+    if (category === "FOOTBALL LIVE (Jadwal Harian)" && typeof channelMap[category] === 'object') {
+        const ln = ch.name.toLowerCase();
+        const lu = ch.url.toLowerCase();
+        
+        for (const subCategory of Object.keys(channelMap[category])) {
+             const keywordsArray = channelMap[category][subCategory];
+             if (Array.isArray(keywordsArray)) {
+                for (const kw of keywordsArray) {
+                    if (typeof kw === 'string') {
+                        const k = kw.toLowerCase();
+                        if (ln.includes(k) || lu.includes(k)) {
+                            groupTitle = subCategory; // Gunakan nama sub-kategori sebagai group-title
+                            break; 
+                        }
+                    }
+                }
+             }
+            if (groupTitle !== category) break; // Jika sub-kategori ditemukan, keluar dari loop sub-kategori
+        }
+    }
+    
     matchedCount++;
 
     const ok = await headOk(ch.url);
@@ -181,12 +233,12 @@ async function main() {
 
     onlineCount++;
     
-    // Gunakan category sebagai group-title
-    const newExtinf = `#EXTINF:-1 group-title="${category}",${ch.name}`;
+    // Gunakan groupTitle yang mungkin telah dispesifikasi (misal: "Liga Inggris (EPL) - Global")
+    const newExtinf = `#EXTINF:-1 group-title="${groupTitle}",${ch.name}`;
     
     output.push(newExtinf); 
     output.push(ch.url);
-    console.log(`ADDED [${category}]:`, ch.name);
+    console.log(`ADDED [${groupTitle}]:`, ch.name);
   }
 
   fs.writeFileSync("live-auto.m3u", output.join("\n") + "\n");
