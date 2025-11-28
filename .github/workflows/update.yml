@@ -2,7 +2,7 @@ name: Update M3U
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/10 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -26,6 +26,7 @@ jobs:
         run: |
           git config user.name "GitHub Bot"
           git config user.email "bot@github"
-          git add live.m3u
+          git add live-auto.m3u
+          git add live-auto-stats.json
           git commit -m "Auto update live m3u" || echo "No changes"
           git push
