@@ -60,6 +60,8 @@ https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/bitrate_3.m3u8
 http://tv.8dott.xyz:80/live/samuel/samuel123456/709263.ts
 #EXTINF:-1 group-title="LIGA INGGRIS (EPL)",Peacock Premier League
 https://fsly.stream.peacocktv.com/Content/CMAF_CTR-4s/Live/channel(vc1021n07j)/master.mpd
+#EXTINF:-1 group-title="LIGA INGGRIS (EPL)",PLUTO 00s REPLAY
+https://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/62ba60f059624e000781c436/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=web&servertSideAds=false&&deviceMake=github.com/inspirationlinks&deviceDNT=1
 #EXTINF:-1 group-title="LIGA INGGRIS (EPL)",TNT Sports 1
 http://line.extraott-iptv.com:88/2755789541/1300714776/13780
 #EXTINF:-1 group-title="LIGA INGGRIS (EPL)",TNT Sports 2
