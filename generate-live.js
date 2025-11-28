@@ -3,17 +3,18 @@ import fetch from "node-fetch";
 import axios from "axios";
 
 /*
-  generate-live.js (FINAL: H+2 Schedule, ALL CHANNELS STATIC GROUPING, Global Duplication Naming)
-  - Fetches soccer events for TODAY, H+1, and H+2 for match detail suffix.
-  - Channels remain in their static broad category (FOOTBALL, BOXING, etc.).
-  - Duplicate channel names across the entire playlist are renamed: "ChannelName -1", "ChannelName -2", etc.
+  generate-live.js (FINAL: H+1 Dynamic Grouping & Single Static Group with FORCE HEADER)
+  - Fetches soccer events (H+0 to H+1) for dynamic grouping.
+  - Channels with live football matches move to ⚽ LIVE FOOTBALL [Tanggal].
+  - All other channels (non-football, non-live football) fall into 🌟 SPORTS GLOBAL & UMUM.
+  - Global duplicate naming is applied.
+  - FIX: Ensures H+0 and H+1 headers appear even if empty.
 */
 
 const SOURCE_M3US = [
   
-  "https://bakulwifi.my.id/live.m3u",
-  "https://bakulwifi.my.id/nyolong.m3u"
-  // Tambahkan URL sumber M3U lainnya di sini jika diperlukan
+  "https://bakulwifi.my.id/live.m3u"
+  // Tambahkan URL live untuk nyolong.m3u di sini jika sudah ada
 ];
 
 // =======================================================
@@ -68,11 +69,12 @@ function loadChannelMap() {
   }
 }
 
-// Mengambil Jadwal Sepak Bola 3 Hari ke Depan (H+0 hingga H+2)
+// Mengambil Jadwal Sepak Bola 2 Hari ke Depan (H+0 hingga H+1)
 async function fetchUpcomingEvents() {
     let allEvents = [];
     
-    for (let offset = 0; offset <= 2; offset++) {
+    // LOOP HINGGA H+1 (offset <= 1)
+    for (let offset = 0; offset <= 1; offset++) {
         const date = getDateString(offset);
         const url = `https://www.thesportsdb.com/api/v1/json/3/eventsday.php?d=${date}&s=Soccer`;
         const txt = await fetchText(url);
@@ -123,7 +125,7 @@ function getStaticCategory(channel, channelMap) {
   return null;
 }
 
-// Mencari Informasi Acara Live/Upcoming Sepak Bola (H+2) untuk Suffix Nama
+// Mencari Informasi Acara Live/Upcoming Sepak Bola (H+1) untuk Suffix Nama
 function getEventMatchInfo(channel, events) {
     const ln = channel.name.toLowerCase();
     const lu = channel.url.toLowerCase();
@@ -152,7 +154,7 @@ function getEventMatchInfo(channel, events) {
         // Format Detail: | [Status/Tanggal - Liga - Waktu] Pertandingan
         const suffix = ` | [${status} - ${bestMatch.league}${timePart}] ${bestMatch.title}`;
 
-        return { suffix: suffix, isLive: bestMatch.offset === 0 };
+        return { suffix: suffix, isLive: bestMatch.offset === 0, dateGroup: `⚽ LIVE FOOTBALL ${datePart}` };
     }
     
     return null;
@@ -160,9 +162,11 @@ function getEventMatchInfo(channel, events) {
 
 
 async function main() {
-  console.log("Starting generate-live.js (STATIC CATEGORY & GLOBAL DUPLICATION)...");
+  console.log("Starting generate-live.js (H+1 Dynamic Grouping, Single Fallback)...");
   
   const output = []; 
+  const FALLBACK_GROUP = "🌟 SPORTS GLOBAL & UMUM";
+  const LIVE_FOOTBALL_PREFIX = "⚽ LIVE FOOTBALL";
 
   const channelMap = loadChannelMap();
   const events = await fetchUpcomingEvents(); 
@@ -186,7 +190,7 @@ async function main() {
   let matchedCount = 0;
 
   // =========================================================================
-  // TAHAP 1: PEMETAAN DAN PENYEMATAN DETAIL JADWAL KE NAMA SALURAN
+  // TAHAP 1: PEMETAAN DAN PENYEMATAN DETAIL JADWAL
   // =========================================================================
   
   const processedChannels = [];
@@ -197,17 +201,23 @@ async function main() {
     
     if (!staticCategory) continue; 
     
+    let groupTitle = FALLBACK_GROUP; // Default: Semua masuk ke Global & Umum
     let finalChannelName = ch.name;
     let isLive = false;
     
-    // Hanya sematkan detail jadwal untuk saluran Bola (kategori yang mengandung FOOTBALL)
-    if (staticCategory.includes("FOOTBALL")) {
+    // Cek apakah saluran ini adalah saluran Bola
+    if (staticCategory === "FOOTBALL") { 
         const eventMatchInfo = getEventMatchInfo(ch, events);
         
         if (eventMatchInfo) {
             finalChannelName += eventMatchInfo.suffix;
+            groupTitle = eventMatchInfo.dateGroup; // Ganti grup ke tanggal dinamis (H+1)
             isLive = eventMatchInfo.isLive;
-        }
+        } 
+        // Jika saluran Football tidak live, ia akan tetap di groupTitle = FALLBACK_GROUP
+    } else {
+        // Saluran Non-Football (BASKET, WWE, dll) juga masuk ke FALLBACK_GROUP
+        // finalChannelName tetap nama aslinya
     }
     
     matchedCount++;
@@ -216,7 +226,8 @@ async function main() {
     processedChannels.push({
         name: finalChannelName,
         url: ch.url,
-        groupTitle: staticCategory, // Group Title selalu statis
+        groupTitle: groupTitle, // Bisa dinamis (Tanggal) atau statis (FALLBACK)
+        originalCategory: staticCategory, // Kategori asli untuk sorting internal
         isLive: isLive
     });
   }
@@ -229,8 +240,6 @@ async function main() {
   const finalOutputChannels = [];
 
   for (const ch of processedChannels) {
-      // Base name di sini adalah NAMA SALURAN ASLI sebelum penomoran duplikat
-      // Kita hapus suffix jadwal untuk mendapatkan nama saluran dasarnya (untuk penomoran)
       const baseNameKey = ch.name.split(' | ')[0]; 
       
       const count = nameCountMap.get(baseNameKey) || 0;
@@ -262,30 +271,69 @@ async function main() {
   }
   
   // =========================================================================
-  // TAHAP 3: OUTPUT AKHIR
+  // TAHAP 3: OUTPUT AKHIR (Dengan Force Header)
   // =========================================================================
   
   const outputMap = new Map();
   
-  // Masukkan semua saluran ke dalam Map berdasarkan Group Title statisnya
-  for (const ch of finalOutputChannels) {
-      if(!outputMap.has(ch.groupTitle)) {
-          outputMap.set(ch.groupTitle, []);
-      }
-      outputMap.get(ch.groupTitle).push(ch);
-  }
+  // Inisialisasi semua grup yang mungkin
+  const dateGroups = [getDateString(0), getDateString(1)]; 
+  dateGroups.forEach(date => {
+      outputMap.set(`${LIVE_FOOTBALL_PREFIX} ${date}`, []);
+  });
+  outputMap.set(FALLBACK_GROUP, []); // Grup statis Fallback
 
+  for (const ch of finalOutputChannels) {
+      if(outputMap.has(ch.groupTitle)) {
+          outputMap.get(ch.groupTitle).push(ch);
+      } else {
+          outputMap.get(FALLBACK_GROUP).push(ch);
+      }
+  }
 
   output.push("#EXTM3U");
   
-  // Urutkan grup secara alfabetis
-  const sortedGroups = Array.from(outputMap.keys()).sort();
+  const sortedGroups = Array.from(outputMap.keys()).sort((a, b) => {
+      // Prioritas 1: Grup LIVE FOOTBALL (Tanggal) di atas
+      if (a.startsWith(LIVE_FOOTBALL_PREFIX) && b.startsWith(LIVE_FOOTBALL_PREFIX)) {
+          return a.localeCompare(b);
+      }
+      if (a.startsWith(LIVE_FOOTBALL_PREFIX)) return -1; 
+      if (b.startsWith(LIVE_FOOTBALL_PREFIX)) return 1;
+      
+      // Prioritas 2: Grup Statis (Fallback) selalu di bawah
+      return 1;
+  });
 
   for (const groupTitle of sortedGroups) {
       const channelsInGroup = outputMap.get(groupTitle);
       
-      if (channelsInGroup.length > 0) {
-          // Urutkan saluran di dalam grup berdasarkan nama
+      // FORCE HEADER: Tuliskan grup dinamis terlepas dari isinya
+      if (groupTitle.startsWith(LIVE_FOOTBALL_PREFIX)) {
+          // Tuliskan header grup dinamis
+          output.push(`\n#EXTINF:-1 group-title=\"${groupTitle}\",--- ${groupTitle} ---`);
+          output.push("https://separator.channel.available/offline.m3u8");
+
+          if (channelsInGroup.length === 0) {
+               // Tampilkan placeholder jika grup tanggal kosong
+               output.push(`#EXTINF:-1 group-title=\"${groupTitle}\",[NO LIVE MATCHES FOUND FOR THIS DATE]`);
+               output.push("https://placeholder.channel.available/offline.m3u8");
+          } else {
+              // Tulis saluran yang cocok
+              channelsInGroup.sort((a, b) => a.name.localeCompare(b.name));
+              for (const ch of channelsInGroup) {
+                  const newExtinf = `#EXTINF:-1 group-title=\"${groupTitle}\",${ch.name}`;
+                  output.push(newExtinf); 
+                  output.push(ch.url);
+              }
+          }
+      } else if (channelsInGroup.length > 0) {
+          // --- Grup Statis (FALLBACK) ---
+          
+          // Tuliskan header grup statis
+          output.push(`\n#EXTINF:-1 group-title=\"${groupTitle}\",--- ${groupTitle} ---`);
+          output.push("https://separator.channel.available/offline.m3u8");
+
           channelsInGroup.sort((a, b) => a.name.localeCompare(b.name));
           for (const ch of channelsInGroup) {
               const newExtinf = `#EXTINF:-1 group-title=\"${groupTitle}\",${ch.name}`;
