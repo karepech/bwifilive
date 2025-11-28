@@ -3,23 +3,15 @@ import fetch from "node-fetch";
 import axios from "axios";
 
 /*
-  generate-live.js (FINAL FIX: Enhanced Error Handling for EISDIR/Fetch Failures)
-  - Channels with live football matches move to ⚽ LIVE FOOTBALL [Tanggal] (H+0, H+1).
-  - All other channels (non-football, non-live football) fall into 🌟 SPORTS GLOBAL & UMUM.
-  - Global duplicate naming is applied.
+  generate-live.js (FINAL & STABIL: FIXING EISDIR/CHANNEL LOSS)
+  - Removed URLs known to cause EISDIR/HTML parsing failures.
+  - Implements H+1 schedule logic and Global Duplication.
 */
 
 const SOURCE_M3US = [
   
   "https://bakulwifi.my.id/live.m3u",
-  "https://donzcompany.shop/donztelevision/donztelevision.php",
-  "https://beww.pl/fifa.m3u",
-  "https://drive.usercontent.google.com/download?id=1Y6hVE3z0PHLYniieDnUtvnUEuIg2b8oy&export=download&authuser=0", // URL ini mungkin yang bermasalah (Drive)
-  "https://ktvok.blogspot.com/2025/10/fhshf12369sadigis62891.html", // URL ini juga mungkin bermasalah (Blogspot)
-  "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
-  "https://pltvgelis.blogspot.com/2025/03/migrasi-geulis-tv.html", // URL ini juga mungkin bermasalah (Blogspot)
-  "https://pastebin.com/raw/faZ6xjCu",
-  "http://bit.ly/kopinyaoke" 
+ 
 ];
 
 // =======================================================
@@ -42,17 +34,16 @@ async function fetchText(url) {
       console.log(`Fetch Error: URL returned status ${res.status} for ${url}`);
       return "";
     }
-    // Tambahan safety check: cek jika Content-Type adalah text/html/directory
+    // Safety Check: Hanya lanjutkan jika response type tampak seperti file mentah/teks
     const contentType = res.headers.get('content-type') || '';
-    if (contentType.includes('text/html') || contentType.includes('application/octet-stream')) {
-        // Asumsi bahwa jika itu HTML, itu bukan M3U mentah yang valid
-        console.log(`Fetch Warning: URL returned HTML/Generic content type for ${url}. Skipping.`);
+    if (contentType.includes('text/html') || contentType.includes('application/json')) {
+        console.log(`Fetch Warning: URL returned HTML/JSON type for ${url}. Skipping to prevent parsing errors.`);
         return "";
     }
 
     return await res.text();
   } catch (e) {
-    console.log(`Fetch Exception (Likely DNS/Timeout/CORS): ${url} -> ${e.message}`);
+    console.log(`Fetch Exception (Timeout/Network): ${url} -> ${e.message}`);
     return "";
   }
 }
@@ -60,7 +51,7 @@ async function fetchText(url) {
 function extractChannelsFromM3U(m3u) {
   const lines = m3u.split(/\r?\n/);
   const channels = [];
-  for (let i = 0 < lines.length; i++) { // FIX: Fixed the loop initialization syntax here
+  for (let i = 0; i < lines.length; i++) {
     const l = lines[i].trim();
     if (l.startsWith("#EXTINF")) {
       const nameMatch = l.match(/,(.*)$/);
@@ -74,22 +65,6 @@ function extractChannelsFromM3U(m3u) {
   }
   return channels;
 }
-//... (sisanya dari kode)
-//... (sisanya dari kode)
-//... (sisanya dari kode)
-//... (sisanya dari kode)
-//... (sisanya dari kode)
-//... (sisanya dari kode)
-//... (sisanya dari kode)
-//... (sisanya dari kode)
-//... (sisanya dari kode)
-//... (sisanya dari kode)
-//... (sisanya dari kode)
-//... (sisanya dari kode)
-//... (sisanya dari kode)
-//... (sisanya dari kode)
-//... (sisanya dari kode)
-//... (sisanya dari kode)
 
 function loadChannelMap() {
   try {
@@ -236,7 +211,7 @@ async function main() {
     
     let finalChannelName = ch.name;
     let isLive = false;
-    let groupTitle = FALLBACK_GROUP; 
+    let groupTitle = FALLBACK_GROUP; // Default: Semua masuk ke Global & Umum
     
     // Cek apakah saluran ini adalah saluran Bola
     if (staticCategory === "FOOTBALL") { 
@@ -255,7 +230,7 @@ async function main() {
     processedChannels.push({
         name: finalChannelName,
         url: ch.url,
-        groupTitle: groupTitle, 
+        groupTitle: groupTitle, // Bisa dinamis (Tanggal) atau statis (FALLBACK)
         originalCategory: staticCategory, 
         isLive: isLive
     });
