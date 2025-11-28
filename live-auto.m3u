@@ -1,13 +1,12 @@
 #EXTM3U
-#EXTM3U
 
-#EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2025-11-28",[NO LIVE MATCHES FOUND]
+#EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2025-11-28",[NO MATCHES FOUND FOR THIS DATE]
 https://no.channel.available.today/offline.m3u8
 
-#EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2025-11-29",[NO LIVE MATCHES FOUND]
+#EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2025-11-29",[NO MATCHES FOUND FOR THIS DATE]
 https://no.channel.available.today/offline.m3u8
 
-#EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2025-11-30",[NO LIVE MATCHES FOUND]
+#EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2025-11-30",[NO MATCHES FOUND FOR THIS DATE]
 https://no.channel.available.today/offline.m3u8
 #EXTINF:-1 group-title="FOOTBALL ASIA & LOKAL",Sukan TV
 https://d25tgymtnqzu8s.cloudfront.net/smil:sukan/manifest.mpd
@@ -21,6 +20,8 @@ https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/ma
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash/enc/6otiglnptp/out/v1/add7499679b0422cb6791f7701f95ecc/cenc.mpd?amznDtid=AOAGZA014O5RE&encoding=segmentBase
 #EXTINF:-1 group-title="KOMPETISI (MMA/WRESTLING)",DAZN RINGSIDE
 https://aegis-cloudfront-1.tubi.video/bfad29e2-5bee-44f3-8256-127324e8b106/playlist.m3u8
+#EXTINF:-1 group-title="KOMPETISI (MMA/WRESTLING)",WWE ᴴᴰ
+http://line.lemotv.cc:80/Ivica5274/juric4005/2903216
 #EXTINF:-1 group-title="KOMPETISI (MMA/WRESTLING)",IMPACT! WRESTLING
 https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/59b722526996084038c01e1b/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel
 #EXTINF:-1 group-title="KOMPETISI (MMA/WRESTLING)",BELLATOR MMA
