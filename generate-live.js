@@ -12,7 +12,7 @@ import axios from "axios";
 const SOURCE_M3US = [
   
   "https://bakulwifi.my.id/live.m3u"
-  // Tambahkan URL live untuk nyolong.m3u di sini jika sudah ada
+  // JANGAN LUPA TAMBAHKAN URL LIVE UNTUK nyolong.m3u DI SINI JIKA SUDAH ADA
 ];
 
 // =======================================================
@@ -160,7 +160,7 @@ function getEventMatchInfo(channel, events) {
 
 
 async function main() {
-  console.log("Starting generate-live.js (FINAL FIX - Ensure all channels print)...");
+  console.log("Starting generate-live.js (H+1 Dynamic Grouping, Single Fallback)...");
   
   const output = []; 
   const FALLBACK_GROUP = "🌟 SPORTS GLOBAL & UMUM";
@@ -200,7 +200,7 @@ async function main() {
     
     if (!staticCategory) continue; 
     
-    let groupTitle = staticCategory; // Default: Kategori Statis
+    let groupTitle = staticCategory; // Default: Kategori Statis (FOOTBALL, BASKET, dll)
     let finalChannelName = ch.name;
     let isLive = false;
     
@@ -216,14 +216,12 @@ async function main() {
         // Jika saluran Football tidak live, groupTitle tetap 'FOOTBALL' (Kategori Statis)
     } 
     
-    // Semua saluran di tahap ini memiliki groupTitle (baik dinamis/tanggal, atau statis/FOOTBALL/BASKET/etc)
-    
     matchedCount++;
     
     processedChannels.push({
         name: finalChannelName,
         url: ch.url,
-        groupTitle: groupTitle, 
+        groupTitle: groupTitle, // Bisa dinamis (Tanggal) atau statis (FOOTBALL, BASKET, dll)
         originalCategory: staticCategory, // Kategori asli untuk sorting internal
         isLive: isLive
     });
@@ -235,13 +233,17 @@ async function main() {
   
   const nameCountMap = new Map();
   const outputMap = new Map();
-
+  
   // Inisialisasi grup dinamis H+1
   const dateGroups = [getDateString(0), getDateString(1)]; 
   dateGroups.forEach(date => {
       outputMap.set(`${LIVE_FOOTBALL_PREFIX} ${date}`, []);
   });
   outputMap.set(FALLBACK_GROUP, []); // Grup statis Fallback
+  // Tambahkan semua kategori statis dari channelMap agar saluran non-live tidak hilang
+  for (const category of Object.keys(channelMap)) {
+      outputMap.set(category, []);
+  }
 
   for (const ch of processedChannels) {
       const baseNameKey = ch.name.split(' | ')[0]; 
@@ -258,6 +260,7 @@ async function main() {
           if (suffixMatch) {
               suffixJadwal = suffixMatch[0];
           }
+
           displayName = `${baseNameKey} -${count}${suffixJadwal}`; 
       }
       
@@ -265,48 +268,47 @@ async function main() {
       if (ch.isLive) {
           displayName = `${displayName} [LIVE]`;
       }
-      
-      ch.name = displayName;
 
-      // Pindahkan channel ke grup yang benar:
+      ch.name = displayName;
+      
       let finalGroup = ch.groupTitle;
 
-      // Logic: Jika saluran BOLA tidak live (groupTitle adalah 'FOOTBALL'),
-      // atau saluran non-bola (BASKET, WWE, dll.), pindahkan ke FALLBACK GROUP.
-      if (finalGroup !== FALLBACK_GROUP && !finalGroup.startsWith(LIVE_FOOTBALL_PREFIX)) {
+      // Logic: Jika saluran BOLA tidak live (groupTitle adalah 'FOOTBALL'), 
+      // atau saluran non-bola (BASKET, WWE, dll), pindahkan ke FALLBACK GROUP.
+      if (!finalGroup.startsWith(LIVE_FOOTBALL_PREFIX)) {
           finalGroup = FALLBACK_GROUP;
       }
       
       // Masukkan ke Map
       if (!outputMap.has(finalGroup)) {
+          // Safety net, meskipun seharusnya sudah diinisialisasi
           outputMap.set(finalGroup, []);
       }
       outputMap.get(finalGroup).push(ch);
   }
-
+  
   // =========================================================================
-  // TAHAP 3: TULIS OUTPUT AKHIR
+  // TAHAP 3: TULIS OUTPUT AKHIR (Dengan Force Header)
   // =========================================================================
   
   output.push("#EXTM3U");
   
+  // Urutkan grup: LIVE FOOTBALL (Tanggal) di atas, diikuti oleh Fallback.
   const sortedGroups = Array.from(outputMap.keys()).sort((a, b) => {
-      // Prioritas 1: Grup LIVE FOOTBALL (Tanggal) di atas
-      if (a.startsWith(LIVE_FOOTBALL_PREFIX) && b.startsWith(LIVE_FOOTBALL_PREFIX)) {
-          return a.localeCompare(b);
-      }
+      if (a.startsWith(LIVE_FOOTBALL_PREFIX) && b.startsWith(LIVE_FOOTBALL_PREFIX)) return a.localeCompare(b);
       if (a.startsWith(LIVE_FOOTBALL_PREFIX)) return -1; 
       if (b.startsWith(LIVE_FOOTBALL_PREFIX)) return 1;
-      
-      // Prioritas 2: Grup Statis (Fallback) selalu di bawah
-      return 1;
+      return a.localeCompare(b); // Urutan alfabetis untuk grup statis
   });
-
-  let totalOutputChannels = 0;
 
   for (const groupTitle of sortedGroups) {
       const channelsInGroup = outputMap.get(groupTitle);
       
+      // Abaikan grup statis yang kosong (misal: kategori 'BASKET' yang tidak memiliki saluran)
+      if (groupTitle !== FALLBACK_GROUP && groupTitle !== LIVE_FOOTBALL_PREFIX && channelsInGroup.length === 0) {
+          continue;
+      }
+
       if (groupTitle.startsWith(LIVE_FOOTBALL_PREFIX)) {
           // --- Grup Dinamis LIVE FOOTBALL ---
           
@@ -318,7 +320,6 @@ async function main() {
                // Tampilkan placeholder jika grup tanggal kosong (sesuai permintaan)
                output.push(`#EXTINF:-1 group-title=\"${groupTitle}\",[NO LIVE MATCHES FOUND FOR THIS DATE]`);
                output.push("https://placeholder.channel.available/offline.m3u8");
-               totalOutputChannels += 1; // Hitung placeholder sebagai satu baris output
           } else {
               // Tulis saluran yang cocok
               channelsInGroup.sort((a, b) => a.name.localeCompare(b.name));
@@ -326,7 +327,6 @@ async function main() {
                   const newExtinf = `#EXTINF:-1 group-title=\"${groupTitle}\",${ch.name}`;
                   output.push(newExtinf); 
                   output.push(ch.url);
-                  totalOutputChannels++;
               }
           }
       } else if (channelsInGroup.length > 0) {
@@ -335,14 +335,12 @@ async function main() {
           // Tuliskan header grup statis
           output.push(`\n#EXTINF:-1 group-title=\"${groupTitle}\",--- ${groupTitle} ---`);
           output.push("https://separator.channel.available/offline.m3u8");
-          totalOutputChannels++; // Hitung separator
 
           channelsInGroup.sort((a, b) => a.name.localeCompare(b.name));
           for (const ch of channelsInGroup) {
               const newExtinf = `#EXTINF:-1 group-title=\"${groupTitle}\",${ch.name}`;
               output.push(newExtinf); 
               output.push(ch.url);
-              totalOutputChannels++;
           }
       }
   }
@@ -358,7 +356,7 @@ async function main() {
 
   fs.writeFileSync("live-auto-stats.json", JSON.stringify(stats, null, 2));
 
-  console.log("=== SUMMARY ===\nTotal unique channels:", unique.length, "\nMatched (categories/schedule):", matchedCount, `\nGenerated live-auto.m3u with ${totalOutputChannels} actual channel/placeholder entries (including offline) \nStats saved to live-auto-stats.json`);
+  console.log("=== SUMMARY ===\nTotal unique channels:", unique.length, "\nMatched (categories/schedule):", matchedCount, "\nGenerated live-auto.m3u\nStats saved to live-auto-stats.json");
 }
 
 main().catch(err => {
