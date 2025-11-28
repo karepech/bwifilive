@@ -3,11 +3,8 @@ import fetch from "node-fetch";
 import axios from "axios";
 
 /*
-  generate-live.js (FINAL & STABIL: H+1 Dynamic Grouping, Single Static Group)
-  - Channels with live football matches move to ⚽ LIVE FOOTBALL [Tanggal] (H+0, H+1).
-  - All other channels (non-football, non-live football) fall into 🌟 SPORTS GLOBAL & UMUM.
-  - Global duplicate naming is applied.
-  - FIX: Cleaned SOURCE_M3US array to remove problematic URLs (Blogspot, Drive) causing EISDIR errors.
+  generate-live.js (FINAL FIX: Ensures all channels (live and static) are printed)
+  - FIXES channel loss issue by guaranteeing assignment to the FALLBACK_GROUP.
 */
 
 const SOURCE_M3US = [
@@ -15,7 +12,10 @@ const SOURCE_M3US = [
   "https://bakulwifi.my.id/live.m3u",
   "https://donzcompany.shop/donztelevision/donztelevision.php",
   "https://beww.pl/fifa.m3u",
+  "https://drive.usercontent.google.com/download?id=1Y6hVE3z0PHLYniieDnUtvnUEuIg2b8oy&export=download&authuser=0",
+  "https://ktvok.blogspot.com/2025/10/fhshf12369sadigis62891.html",
   "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
+  "https://pltvgelis.blogspot.com/2025/03/migrasi-geulis-tv.html",
   "https://pastebin.com/raw/faZ6xjCu",
   "http://bit.ly/kopinyaoke" 
 ];
@@ -165,7 +165,7 @@ function getEventMatchInfo(channel, events) {
 
 
 async function main() {
-  console.log("Starting generate-live.js (FINAL FIX - Ensure all channels print)...");
+  console.log("Starting generate-live.js (H+1 Dynamic Grouping, Single Fallback)...");
   
   const output = []; 
   const FALLBACK_GROUP = "🌟 SPORTS GLOBAL & UMUM";
@@ -226,7 +226,7 @@ async function main() {
     processedChannels.push({
         name: finalChannelName,
         url: ch.url,
-        groupTitle: groupTitle, // Bisa dinamis (Tanggal) atau statis (FALLBACK)
+        groupTitle: groupTitle, 
         originalCategory: staticCategory, 
         isLive: isLive
     });
@@ -299,8 +299,6 @@ async function main() {
       return 1;
   });
 
-  let totalOutputChannels = 0;
-
   for (const groupTitle of sortedGroups) {
       const channelsInGroup = outputMap.get(groupTitle);
       
@@ -308,13 +306,11 @@ async function main() {
           // Tuliskan header grup
           output.push(`\n#EXTINF:-1 group-title=\"${groupTitle}\",--- ${groupTitle} ---`);
           output.push("https://separator.channel.available/offline.m3u8");
-          totalOutputChannels++;
 
           if (groupTitle.startsWith(LIVE_FOOTBALL_PREFIX) && channelsInGroup.length === 0) {
                // Tampilkan placeholder jika grup tanggal kosong (sesuai permintaan)
                output.push(`#EXTINF:-1 group-title=\"${groupTitle}\",[NO LIVE MATCHES FOUND FOR THIS DATE]`);
                output.push("https://placeholder.channel.available/offline.m3u8");
-               totalOutputChannels++;
           } else {
               // Tulis saluran yang cocok
               channelsInGroup.sort((a, b) => a.name.localeCompare(b.name));
@@ -322,7 +318,6 @@ async function main() {
                   const newExtinf = `#EXTINF:-1 group-title=\"${groupTitle}\",${ch.name}`;
                   output.push(newExtinf); 
                   output.push(ch.url);
-                  totalOutputChannels++;
               }
           }
       }
@@ -339,7 +334,7 @@ async function main() {
 
   fs.writeFileSync("live-auto-stats.json", JSON.stringify(stats, null, 2));
 
-  console.log("=== SUMMARY ===\nTotal unique channels:", unique.length, "\nMatched (categories/schedule):", matchedCount, `\nGenerated live-auto.m3u with ${totalOutputChannels} actual channel/placeholder entries (including offline) \nStats saved to live-auto-stats.json`);
+  console.log("=== SUMMARY ===\nTotal unique channels:", unique.length, "\nMatched (categories/schedule):", matchedCount, "\nGenerated live-auto.m3u\nStats saved to live-auto-stats.json");
 }
 
 main().catch(err => {
