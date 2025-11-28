@@ -3,11 +3,11 @@
 https://d3b0v7fggu5zwm.cloudfront.net/out/v1/b4814ae93ca84dd3bb5b0aff76ca263f/index.mpd
 #EXTINF:-1 group-title="UMUM & MULTISPORT",SpoTV 2
 https://d2tjypxxy769fn.cloudfront.net/out/v1/46d9cf39b9a84183b8d5022ac8f4bc41/index.mpd
-#EXTINF:-1 group-title="Asia & Liga Lokal",Sukan TV
+#EXTINF:-1 group-title="FOOTBALL ASIA & LOKAL",Sukan TV
 https://d25tgymtnqzu8s.cloudfront.net/smil:sukan/manifest.mpd
-#EXTINF:-1 group-title="Asia & Liga Lokal",OKEY TV
+#EXTINF:-1 group-title="FOOTBALL ASIA & LOKAL",OKEY TV
 https://d25tgymtnqzu8s.cloudfront.net/smil:okey/manifest.mpd
-#EXTINF:-1 group-title="Liga Inggris (EPL) - Global",Peacock Premier League
+#EXTINF:-1 group-title="LIGA INGGRIS (EPL)",Peacock Premier League
 https://fsly.stream.peacocktv.com/Content/CMAF_CTR-4s/Live/channel(vc1021n07j)/master.mpd
 #EXTINF:-1 group-title="KOMPETISI (MMA/WRESTLING)",DAZN RINGSIDE
 https://aegis-cloudfront-1.tubi.video/bfad29e2-5bee-44f3-8256-127324e8b106/playlist.m3u8
@@ -35,19 +35,19 @@ http://line.stayconnected.pro:80/play/live.php?mac=00:1A:79:39:37:34&stream=1608
 https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/Astar2.m3u8
 #EXTINF:-1 group-title="UMUM & MULTISPORT",ASTRO SPORTS PLUS ᴴᴰ
 https://raw.githubusercontent.com/Cutsiffa/pl/refs/heads/main/Astpl4.m3u8
-#EXTINF:-1 group-title="Asia & Liga Lokal",ASTRO FOOTBALL ᴴᴰ
+#EXTINF:-1 group-title="FOOTBALL ASIA & LOKAL",ASTRO FOOTBALL ᴴᴰ
 https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/AstFut.m3u8
 #EXTINF:-1 group-title="UMUM & MULTISPORT",SONY TEN 1 ᴴᴰ
 https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/Son1.m3u8
-#EXTINF:-1 group-title="LaLiga Spanyol - Global",BEIN SPORTS 4
+#EXTINF:-1 group-title="LALIGA SPANYOL",BEIN SPORTS 4
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142758
-#EXTINF:-1 group-title="LaLiga Spanyol - Global",BEIN SPORTS 5
+#EXTINF:-1 group-title="LALIGA SPANYOL",BEIN SPORTS 5
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142759
-#EXTINF:-1 group-title="LaLiga Spanyol - Global",BEIN SPORTS 6
+#EXTINF:-1 group-title="LALIGA SPANYOL",BEIN SPORTS 6
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
-#EXTINF:-1 group-title="LaLiga Spanyol - Global",BEIN SPORTS 7
+#EXTINF:-1 group-title="LALIGA SPANYOL",BEIN SPORTS 7
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142761
-#EXTINF:-1 group-title="LaLiga Spanyol - Global",BEIN SPORTS 8
+#EXTINF:-1 group-title="LALIGA SPANYOL",BEIN SPORTS 8
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142752
 #EXTINF:-1 group-title="UMUM & MULTISPORT",DAZN 1-DT1
 http://213.176.3.65:8080/live/COOPERath/w3EBgdaXF0/111261.ts
@@ -59,13 +59,13 @@ http://supersonictv.live:8080/006779/439866/7632
 http://supersonictv.live:8080/006779/439866/7634
 #EXTINF:-1 group-title="MOTORSPORT (F1/RACING)",DAZN F1
 http://medotv.nl:8000/RAMBOfoundedoninternetsoIchangedTheFuckinguSERNAMelol123/5caU9cN5jFjZ/115840
-#EXTINF:-1 group-title="Liga Prancis & Eropa Lainnya",PRIMA SPORT 1
+#EXTINF:-1 group-title="FOOTBALL EROPA LAINNYA",PRIMA SPORT 1
 https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/prim1.m3u8
 #EXTINF:-1 group-title="TENNIS & GOLF",TENNIS CHANNEL 1
 https://tennischannel-int-samsunguk.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="TENNIS & GOLF",TENNIS CHANNEL 2
 http://49.0.64.96:8007/TENNIS
-#EXTINF:-1 group-title="Liga Prancis & Eropa Lainnya",SPORTV 3
+#EXTINF:-1 group-title="FOOTBALL EROPA LAINNYA",SPORTV 3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash/enc/6otiglnptp/out/v1/add7499679b0422cb6791f7701f95ecc/cenc.mpd?amznDtid=AOAGZA014O5RE&encoding=segmentBase
 #EXTINF:-1 group-title="UMUM & MULTISPORT",HUB SPORTS 1
 https://github.com/udzaa2238/tvtb-me/raw/refs/heads/main/hub-sport-1-1.m3u8?raw=true
@@ -95,18 +95,14 @@ http://de.online24.pm/play/6710/0E5BF0B5A9755BD/video.m3u8
 https://wahyu1ptv.pages.dev/SuperSport1-HD.m3u8
 #EXTINF:-1 group-title="UMUM & MULTISPORT",SUPER SPORT 2
 https://wahyu1ptv.pages.dev/SuperSport2-HD.m3u8
-#EXTINF:-1 group-title="Saluran Klub & Lainnya",MUTV ᴴᴰ
-http://tvmate.icu:8080/69NpyV/884735/53717
-#EXTINF:-1 group-title="LaLiga Spanyol - Global",REAL MADRID TV ᴴᴰ
+#EXTINF:-1 group-title="LALIGA SPANYOL",REAL MADRID TV ᴴᴰ
 https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/bitrate_3.m3u8
-#EXTINF:-1 group-title="LaLiga Spanyol - Global",BARCA TV ᴴᴰ
+#EXTINF:-1 group-title="LALIGA SPANYOL",BARCA TV ᴴᴰ
 https://amg17560-fcb-amg17560c1-rakuten-uk-4891.playouts.now.amagi.tv/playlist/amg17560-fcbarcelona-topbarcaenglish-rakutenuk/playlist.m3u8
-#EXTINF:-1 group-title="Serie A Italia - Global",MILAN TV ᴴᴰ
+#EXTINF:-1 group-title="SERIE A ITALIA",MILAN TV ᴴᴰ
 http://medotv.nl:8000/RAMBOfoundedoninternetsoIchangedTheFuckinguSERNAMelol123/5caU9cN5jFjZ/127757
 #EXTINF:-1 group-title="UMUM & MULTISPORT",BILLIYARD TV
 https://newidco-billiardstv-1-eu.xiaomi.wurl.tv/playlist.m3u8
-#EXTINF:-1 group-title="KOMPETISI (MMA/WRESTLING)",WWE ᴴᴰ
-http://line.lemotv.cc:80/Ivica5274/juric4005/2903216
 #EXTINF:-1 group-title="KOMPETISI (MMA/WRESTLING)",IMPACT! WRESTLING
 https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/59b722526996084038c01e1b/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel
 #EXTINF:-1 group-title="KOMPETISI (MMA/WRESTLING)",BELLATOR MMA
