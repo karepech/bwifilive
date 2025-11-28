@@ -3,14 +3,18 @@ import fetch from "node-fetch";
 import axios from "axios";
 
 /*
-  generate-live.js (FINAL FIX: Ensures all channels (live and static) are printed)
-  - FIXES channel loss issue by guaranteeing assignment to the FALLBACK_GROUP.
+  generate-live.js (FINAL FIX: Kategori Tunggal "SPORT" sebagai Fallback Statis)
+  - Saluran Football yang live/upcoming pindah ke grup dinamis (⚽ LIVE FOOTBALL [Tanggal]).
+  - SEMUA saluran lain (non-live football, Basket, WWE, dll) jatuh ke grup statis tunggal "SPORT".
 */
 
 const SOURCE_M3US = [
   
   "https://bakulwifi.my.id/live.m3u",
   "https://donzcompany.shop/donztelevision/donztelevision.php",
+  "https://beww.pl/fifa.m3u",
+  "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
+  "https://pastebin.com/raw/faZ6xjCu",
   "http://bit.ly/kopinyaoke" 
 ];
 
@@ -173,10 +177,11 @@ function getEventMatchInfo(channel, events) {
 
 
 async function main() {
-  console.log("Starting generate-live.js (H+1 Dynamic Grouping, Single Fallback)...");
+  console.log("Starting generate-live.js (Single SPORT Fallback)...");
   
   const output = []; 
-  const FALLBACK_GROUP = "🌟 SPORTS GLOBAL & UMUM";
+  // Grup Statis Tunggal yang baru
+  const FALLBACK_GROUP = "SPORT";
   const LIVE_FOOTBALL_PREFIX = "⚽ LIVE FOOTBALL";
 
   const channelMap = loadChannelMap();
@@ -202,7 +207,7 @@ async function main() {
   let matchedCount = 0;
 
   // =========================================================================
-  // TAHAP 1: PEMETAAN DAN PENYEMATAN DETAIL JADWAL
+  // TAHAP 1: PEMETAAN KE GRUP DINAMIS/STATIS
   // =========================================================================
   
   const processedChannels = [];
@@ -215,7 +220,7 @@ async function main() {
     
     let finalChannelName = ch.name;
     let isLive = false;
-    let groupTitle = FALLBACK_GROUP; 
+    let groupTitle = FALLBACK_GROUP; // Default: Semua masuk ke grup tunggal "SPORT"
     
     // Cek apakah saluran ini adalah saluran Bola
     if (staticCategory === "FOOTBALL") { 
@@ -226,7 +231,7 @@ async function main() {
             groupTitle = eventMatchInfo.dateGroup; // Ganti grup ke tanggal dinamis (H+1)
             isLive = eventMatchInfo.isLive;
         } 
-        // Jika saluran Football tidak live, groupTitle tetap FALLBACK_GROUP
+        // Jika saluran Football tidak live, groupTitle tetap FALLBACK_GROUP ("SPORT")
     } 
     
     matchedCount++;
@@ -234,7 +239,7 @@ async function main() {
     processedChannels.push({
         name: finalChannelName,
         url: ch.url,
-        groupTitle: groupTitle, 
+        groupTitle: groupTitle, // Bisa dinamis (Tanggal) atau statis (SPORT)
         originalCategory: staticCategory, 
         isLive: isLive,
         logo: ch.logo // Sertakan logo
