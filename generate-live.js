@@ -8,12 +8,19 @@ import axios from "axios";
   - Channels with live football matches move to ⚽ LIVE FOOTBALL [Tanggal].
   - All other channels (non-football, non-live football) fall into 🌟 SPORTS GLOBAL & UMUM.
   - Global duplicate naming is applied.
+  - NEW: Incorporates 8 M3U source URLs provided by the user.
 */
 
 const SOURCE_M3US = [
   
-  "https://bakulwifi.my.id/live.m3u"
-  // Tambahkan URL live untuk nyolong.m3u di sini jika sudah ada
+  "https://bakulwifi.my.id/live.m3u",
+  "https://donzcompany.shop/donztelevision/donztelevision.php",
+  "https://beww.pl/fifa.m3u",
+  "https://drive.usercontent.google.com/download?id=1Y6hVE3z0PHLYniieDnUtvnUEuIg2b8oy&export=download&authuser=0",
+  "https://ktvok.blogspot.com/2025/10/fhshf12369sadigis62891.html",
+  "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
+  "https://pltvgelis.blogspot.com/2025/03/migrasi-geulis-tv.html",
+  "https://pastebin.com/raw/faZ6xjCu"
 ];
 
 // =======================================================
@@ -35,7 +42,7 @@ async function fetchText(url) {
     if (!res.ok) return "";
     return await res.text();
   } catch (e) {
-    console.log("fetchText error for", url, e.message);
+    console.log(`fetchText error for ${url}: ${e.message}`);
     return "";
   }
 }
@@ -172,6 +179,7 @@ async function main() {
   
   let allChannels = [];
   for (const src of SOURCE_M3US) {
+    console.log(`Fetching from: ${src}`);
     const m3u = await fetchText(src);
     if (!m3u) continue;
     allChannels = allChannels.concat(extractChannelsFromM3U(m3u));
@@ -216,7 +224,6 @@ async function main() {
         // Jika saluran Football tidak live, ia akan tetap di groupTitle = FALLBACK_GROUP
     } else {
         // Saluran Non-Football (BASKET, WWE, dll) juga masuk ke FALLBACK_GROUP
-        // finalChannelName tetap nama aslinya.
     }
     
     matchedCount++;
