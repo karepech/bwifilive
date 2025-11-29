@@ -44,6 +44,10 @@ https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8
 https://5c7b683162943.streamlock.net/live/ngrp:bahrainsportstwo_all/playlist.m3u8
 #EXTINF:-1 group-title="SPORT" tvg-logo="https://i.imgur.com/lJoFi92.jpg",BARCA TV ᴴᴰ
 https://amg17560-fcb-amg17560c1-rakuten-uk-4891.playouts.now.amagi.tv/playlist/amg17560-fcbarcelona-topbarcaenglish-rakutenuk/playlist.m3u8
+#EXTINF:-1 group-title="SPORT" tvg-logo="https://i.imgur.com/ASw4zju.jpg",BEIN SPORTS 2 SERIE A
+https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/bEIN2.m3u8
+#EXTINF:-1 group-title="SPORT" tvg-logo="https://i.imgur.com/BGu4tAb.jpg",BEIN SPORTS 3 BUNDES LIGA
+https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/BS3.m3u8
 #EXTINF:-1 group-title="SPORT" tvg-logo="https://i.imgur.com/lIzyqdW.jpg",BEIN SPORTS 4
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142758
 #EXTINF:-1 group-title="SPORT" tvg-logo="https://i.imgur.com/fAaNONB.jpg",BEIN SPORTS 5
@@ -146,6 +150,8 @@ https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_3360.m3u8
 http://tv.8dott.xyz:80/live/samuel/samuel123456/428868.ts
 #EXTINF:-1 group-title="SPORT" tvg-logo="https://i.imgur.com/SlG6Oz3.jpg",SHARJAH SPORT
 https://svs.itworkscdn.net/smc4sportslive/smc4.smil/playlist.m3u8?checkedby:hlscat.com
+#EXTINF:-1 group-title="SPORT" tvg-logo="https://i.imgur.com/BsoxyN8.jpg",SKY SPORTS EPL
+https://a1xs.vip/120004
 #EXTINF:-1 group-title="SPORT" tvg-logo="https://i.imgur.com/Pbd0tSD.jpg",SKY SPORTS FOOTBALL
 http://tv.8dott.xyz:80/live/samuel/samuel123456/35798.ts
 #EXTINF:-1 group-title="SPORT" tvg-logo="https://i.imgur.com/MMCUXth.jpg",SKY SPORTS GOLF ᴴᴰ
@@ -174,9 +180,13 @@ http://line.extraott-iptv.com:88/2755789541/1300714776/13779
 http://line.extraott-iptv.com:88/2755789541/1300714776/13778
 #EXTINF:-1 group-title="SPORT" tvg-logo="https://i.imgur.com/ZFke1fA.jpg",TNT Sports 4
 http://line.extraott-iptv.com:88/2755789541/1300714776/153713
+#EXTINF:-1 group-title="SPORT" tvg-logo="https://i.imgur.com/mL98nfP.jpg",UNIFI SPORTS
+https://unifi-live01.secureswiftcontent.com/UnifiHD/live11.mpd
 #EXTINF:-1 group-title="SPORT" tvg-logo="https://i.imgur.com/UbZvIra.jpg",VOOSPORT ᴴᴰ
 http://tv.8dott.xyz:80/live/samuel/samuel123456/845579.ts
 #EXTINF:-1 group-title="SPORT" tvg-logo="https://i.imgur.com/Rj9nRjI.jpg",WWE ᴴᴰ
 http://line.lemotv.cc:80/Ivica5274/juric4005/2903216
 #EXTINF:-1 group-title="SPORT" tvg-logo="https://i.imgur.com/VmTiFBk.jpg",XTREM SPORTS
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e0b81a5c-6ab5-48cd-aaa9-f82de4ab5bf9/manifest.m3u8
+#EXTINF:-1 group-title="SPORT" tvg-logo="https://i.imgur.com/bMC6dEf.jpg",ZIGGO SPORT 2
+https://wahyu1ptv.pages.dev/ZiggoSport2-HD.m3u8
