@@ -30,6 +30,8 @@ https://d2xz2v5wuvgur6.cloudfront.net/out/v1/63c0da12bb4d48afbaf053f51dff2353/in
 https://atemecdnbalancer-voe.sysln.id/live/eds/SPOTVHD/mediampd/SPOTVHD.mpd
 #EXTINF:-1 group-title="SPORT" tvg-logo="https://mimipipi22.github.io/logo/sports/tvrisport.jpg",,TVRI SPORT
 https://op-group1-swiftservesd-1.dens.tv/s/s107/index.m3u8?app_type=web&userid=lite&chname=TVRI_Sport
+#EXTINF:-1 group-title="SPORT" tvg-logo="https://i.imgur.com/Xn7B7b9.jpg",ABU DHABI SPORTS
+https://vo-live-media.cdb.cdn.orange.com/Content/Channel/AbuDhabiSportsChannel2/HLS/index.m3u8
 #EXTINF:-1 group-title="SPORT" tvg-logo="https://i.imgur.com/NipEt9B.jpg",ARENA PREMIUM 1
 http://zqwkakq.sakuravpn.xyz:900/live/0419634994/4884966970/401436882.m3u8
 #EXTINF:-1 group-title="SPORT" tvg-logo="https://i.imgur.com/kPAlmra.jpg",ARENA PREMIUM 2
