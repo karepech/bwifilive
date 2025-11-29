@@ -12,6 +12,24 @@ https://placeholder.channel.available/offline.m3u8
 
 #EXTINF:-1 group-title="SPORT",--- SPORT ---
 https://separator.channel.available/offline.m3u8
+#EXTINF:-1 group-title="SPORT" tvg-logo="https://mimipipi22.github.io/logo/sports/beinsports.jpg",,BEIN SPORTS 1
+https://d6m3sfa7e58z5.cloudfront.net/out/v1/3b0660e05eed4d769521eb0275aab3ab/index.mpd
+#EXTINF:-1 group-title="SPORT" tvg-logo="https://mimipipi22.github.io/logo/sports/beinsports2.jpg",,BEIN SPORTS 2
+https://d6m3sfa7e58z5.cloudfront.net/out/v1/cfca527d0f16403396a71b2d3d54c32f/index.mpd
+#EXTINF:-1 group-title="SPORT" tvg-logo="https://mimipipi22.github.io/logo/sports/beinsports3.jpg",,BEIN SPORTS 3
+https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
+#EXTINF:-1 group-title="SPORT" tvg-logo="https://mimipipi22.github.io/logo/sports/eurosports.jpg",,EUROSPORT
+https://atemecdnbalancer-voe.sysln.id/live/eds/EUROSPORTHD/mediampd/EUROSPORTHD.mpd
+#EXTINF:-1 group-title="SPORT" tvg-logo="https://mimipipi22.github.io/logo/sports/footballtv.jpg",,FOOTBALL TV
+https://cdnjkt913.transvision.co.id:1000/live/master/1/4028c68582449a2e0182597777ec21f3/manifest.mpd
+#EXTINF:-1 group-title="SPORT" tvg-logo="https://mimipipi22.github.io/logo/sports/golf+.jpg",,GOLF+
+https://cdnjkt913.transvision.co.id:1000/live/master/3/4028c68571b3914b01720e7ff4376d21/manifest.mpd
+#EXTINF:-1 group-title="SPORT" tvg-logo="https://mimipipi22.github.io/logo/sports/soccer.jpg",,SOCCER CHANNEL
+https://d2xz2v5wuvgur6.cloudfront.net/out/v1/63c0da12bb4d48afbaf053f51dff2353/index.mpd
+#EXTINF:-1 group-title="SPORT" tvg-logo="https://mimipipi22.github.io/logo/sports/spotv.jpg",,SPOTV
+https://atemecdnbalancer-voe.sysln.id/live/eds/SPOTVHD/mediampd/SPOTVHD.mpd
+#EXTINF:-1 group-title="SPORT" tvg-logo="https://mimipipi22.github.io/logo/sports/tvrisport.jpg",,TVRI SPORT
+https://op-group1-swiftservesd-1.dens.tv/s/s107/index.m3u8?app_type=web&userid=lite&chname=TVRI_Sport
 #EXTINF:-1 group-title="SPORT" tvg-logo="https://i.imgur.com/NipEt9B.jpg",ARENA PREMIUM 1
 http://zqwkakq.sakuravpn.xyz:900/live/0419634994/4884966970/401436882.m3u8
 #EXTINF:-1 group-title="SPORT" tvg-logo="https://i.imgur.com/kPAlmra.jpg",ARENA PREMIUM 2
@@ -60,8 +78,6 @@ http://supersonictv.live:8080/006779/439866/7632
 http://supersonictv.live:8080/006779/439866/7634
 #EXTINF:-1 group-title="SPORT" tvg-logo="https://i.imgur.com/IfRv9r2.jpg",DAZN F1
 http://medotv.nl:8000/RAMBOfoundedoninternetsoIchangedTheFuckinguSERNAMelol123/5caU9cN5jFjZ/115840
-#EXTINF:-1 group-title="SPORT" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeT4u1nAktEXfgIZwAfNRX4p1V92nn7ivtPBKnpSGBIzqiusuAPbfpNSRANU0ENBJEmp1vFnZyLpUbBCebg9ya400a-62HRackCrUXKV-j1dUMPqRi2OB8ONfz__XPi8C5NG8bbpuYmamrJZGqmbqdMNpF58uLIopuoHnSk8fVpTopJxVSvR3Tqc7_a_K9/s700/DAZN%201.png",DAZN HD
-https://storage.googleapis.com/gubnsterdsa3/mux_video_ts1/index-1.m3u8
 #EXTINF:-1 group-title="SPORT" tvg-logo="https://i.imgur.com/ugBtJIA.jpg",DAZN LALIGA
 http://tv.8dott.xyz:80/live/samuel/samuel123456/837876.ts
 #EXTINF:-1 group-title="SPORT" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKVJVdXD6NTy8nMOIOb_mqewV8NZMUjHdPog&s",DAZN RINGSIDE
