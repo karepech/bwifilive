@@ -1,13 +1,13 @@
 #EXTM3U
 
-#EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2025-12-04",--- ⚽ LIVE FOOTBALL 2025-12-04 ---
-https://separator.channel.available/offline.m3u8
-#EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2025-12-04",[NO LIVE MATCHES FOUND FOR THIS DATE]
-https://placeholder.channel.available/offline.m3u8
-
 #EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2025-12-05",--- ⚽ LIVE FOOTBALL 2025-12-05 ---
 https://separator.channel.available/offline.m3u8
 #EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2025-12-05",[NO LIVE MATCHES FOUND FOR THIS DATE]
+https://placeholder.channel.available/offline.m3u8
+
+#EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2025-12-06",--- ⚽ LIVE FOOTBALL 2025-12-06 ---
+https://separator.channel.available/offline.m3u8
+#EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2025-12-06",[NO LIVE MATCHES FOUND FOR THIS DATE]
 https://placeholder.channel.available/offline.m3u8
 
 #EXTINF:-1 group-title="SPORT",--- SPORT ---
