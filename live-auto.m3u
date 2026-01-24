@@ -1,13 +1,13 @@
 #EXTM3U
 
-#EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2026-01-23",--- ⚽ LIVE FOOTBALL 2026-01-23 ---
-https://separator.channel.available/offline.m3u8
-#EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2026-01-23",[NO LIVE MATCHES FOUND FOR THIS DATE]
-https://placeholder.channel.available/offline.m3u8
-
 #EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2026-01-24",--- ⚽ LIVE FOOTBALL 2026-01-24 ---
 https://separator.channel.available/offline.m3u8
 #EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2026-01-24",[NO LIVE MATCHES FOUND FOR THIS DATE]
+https://placeholder.channel.available/offline.m3u8
+
+#EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2026-01-25",--- ⚽ LIVE FOOTBALL 2026-01-25 ---
+https://separator.channel.available/offline.m3u8
+#EXTINF:-1 group-title="⚽ LIVE FOOTBALL 2026-01-25",[NO LIVE MATCHES FOUND FOR THIS DATE]
 https://placeholder.channel.available/offline.m3u8
 
 #EXTINF:-1 group-title="SPORT",--- SPORT ---
